@@ -1,0 +1,23 @@
+{
+  "title": "Featured Projects",
+  "description": "Recent work from my development lab.",
+  "cta": { "label": "View All Projects", "href": "/projects" },
+  "items": [
+    {
+      "id": "serena-project",
+      "title": "Serena Project",
+      "description": "A web portal for students with emotional problems",
+      "image": "/images/projects/serena-project.png",
+      "tags": ["Node.js", "React", "Tailwindcss"],
+      "url": "https://neobank.example.com"
+    },
+    {
+      "id": "project-hub",
+      "title": "Project Hub",
+      "description": "A web for a high school to upload their students jobs.",
+      "image": "/images/projects/project-hub.jpg",
+      "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
+      "url": "https://aura.example.com"
+    }
+  ]
+}

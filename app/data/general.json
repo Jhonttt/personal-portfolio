@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "headline": "Turning ideas into",
+    "highlight": "scalable",
+    "headlineEnd": "products",
+    "description": "Fullstack Developer focused on visual depth and clean execution. Building high-performance applications with modern architecture.",
+    "image": {
+      "src": "/images/hero.jpg",
+      "alt": "Hero visual"
+    },
+    "cta": {
+      "primary": { "label": "View My Work", "href": "#projects" },
+      "secondary": { "label": "Download CV", "href": "/cv.pdf" }
+    },
+    "badge": {
+      "label": "TRUSTED BY",
+      "value": "25+ Global Clients"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a dedicated Fullstack Developer specializing in building robust and scalable digital products. With more than 2 years of experience, I bridge the gap between complex backend logic and intuitive frontend experiences.",
+    "badge": "Certified AWS Developer",
+    "metrics": [
+      { "label": "EXPERIENCE", "value": "2+ Years" },
+      { "label": "PROJECTS", "value": "2+" },
+      { "label": "SUCCESS RATE", "value": "100%" },
+      { "label": "AVAILABILITY", "value": "Remote" }
+    ]
+  },
+  "contact": {
+    "email": "juanatahonadev@gmail.com"
+  },
+  "footer": {
+    "copy": "© 2025 JUAN.dev · All rights reserved.",
+    "socials": [
+      { "label": "X", "icon": "x", "href": "https://x.com" },
+      { "label": "LinkedIn", "icon": "linkedin", "href": "https://linkedin.com" },
+      { "label": "GitHub", "icon": "github", "href": "https://github.com/Jhonttt" },
+      { "label": "Web", "icon": "globe", "href": "https://juan.dev" }
+    ]
+  }
+}

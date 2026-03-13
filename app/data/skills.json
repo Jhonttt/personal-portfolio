@@ -1,0 +1,39 @@
+{
+  "title": "My Tech Stack",
+  "description": "The tools and technologies I use to bring ideas to life.",
+  "categories": [
+    {
+      "id": "frontend",
+      "label": "Frontend",
+      "icon": "layout",
+      "items": [
+        { "name": "React", "icon": "react" },
+        { "name": "Vue", "icon": "vue" },
+        { "name": "TypeScript", "icon": "typescript" },
+        { "name": "Tailwind", "icon": "tailwind" }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "icon": "server",
+      "items": [
+        { "name": "Node.js", "icon": "nodejs" },
+        { "name": "Laravel", "icon": "postgres" },
+        { "name": "MongoDB", "icon": "mongodb" },
+        { "name": "Java", "icon": "redis" }
+      ]
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "icon": "wrench",
+      "items": [
+        { "name": "Vercel", "icon": "vercel" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Git", "icon": "git" },
+        { "name": "Figma", "icon": "figma" }
+      ]
+    }
+  ]
+}
