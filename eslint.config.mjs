@@ -1,7 +1,7 @@
 // @ts-check
 import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default withNuxt(
+export default withNuxt({
   rules: {
     'no-console': 'warn',
     'no-unused-vars': 'warn',
@@ -14,5 +14,6 @@ export default withNuxt(
 
     'vue/component-name-in-template-casing': ['warn', 'PascalCase'], 
     'vue/attributes-order': 'warn',
-  }
-)
+  },
+  ignores: ['commitlint.config.ts'],
+})
