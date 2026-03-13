@@ -92,3 +92,7 @@ personal-portfolio/
 - **Commits** siguiendo [Conventional Commits](https://www.conventionalcommits.org/): `feat:`, `fix:`, `chore:`...
 - **Estilos** mobile-first con clases de Tailwind
 - **Datos** centralizados en JSONs bajo `app/data/`
+
+## Mockup
+
+![Mockup del portfolio](docs/mockup.png)
