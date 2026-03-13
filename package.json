@@ -19,11 +19,15 @@
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
     "@nuxt/eslint": "^1.15.2",
     "@tailwindcss/vite": "^4.2.1",
     "@types/node": "^25.5.0",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.3",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
