@@ -5,8 +5,8 @@
 </script>
 
 <template>
-  <header class="border-b-1 py-4 flex items-center justify-between">
-    <h2 class="ml-15 uppercase font-black">{{ navigation.logo.title }}</h2>
+  <header class="border-b py-4 flex items-center justify-between px-25">
+    <h2 class="uppercase font-black">{{ navigation.logo.title }}</h2>
 
     <nav>
       <ul class="flex gap-3">
@@ -18,7 +18,7 @@
 
     <a
       href="{{ navigation.cta.href }}"
-      class="border-2 mr-15 rounded-md py-1.5 px-3.5 text-xs font-bold"
+      class="border-2 rounded-md py-1.5 px-3.5 text-xs font-bold"
       >{{ navigation.cta.label }}</a
     >
   </header>

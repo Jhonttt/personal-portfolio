@@ -32,7 +32,7 @@
     "email": "juanatahonadev@gmail.com"
   },
   "footer": {
-    "copy": "© 2025 JUAN.dev · All rights reserved.",
+    "copy": "© {year} JUAN.dev · All rights reserved.",
     "socials": [
       { "label": "X", "icon": "x", "href": "https://x.com" },
       { "label": "LinkedIn", "icon": "linkedin", "href": "https://linkedin.com" },
