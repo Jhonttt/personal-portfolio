@@ -5,16 +5,10 @@
 </script>
 
 <template>
-  <header class="border-b py-4 flex items-center justify-between px-25">
+  <header class="border-b py-4 flex items-center justify-between px-25 border-dark-border">
     <h2 class="uppercase font-black">{{ navigation.logo.title }}</h2>
 
-    <nav>
-      <ul class="flex gap-3">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
-    </nav>
+    <LayoutAppNav />
 
     <a
       href="{{ navigation.cta.href }}"

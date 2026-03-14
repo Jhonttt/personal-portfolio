@@ -10,7 +10,7 @@
 
 <template>
   <footer
-    class="border-t py-15 flex items-center bottom-0 justify-between w-full px-25 border-white/10"
+    class="border-t py-15 flex items-center bottom-0 justify-between w-full px-25 border-dark-border"
   >
     <h2 class="uppercase font-black">{{ navigation.title }}</h2>
 
