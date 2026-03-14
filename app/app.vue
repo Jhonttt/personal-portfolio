@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="font-inter min-h-screen flex flex-col overflow-hidden">
     <LayoutAppHeader />
-    <NuxtPage />
+    <main class="flex flex-1">
+      <NuxtPage />
+    </main>
     <LayoutAppFooter />
   </div>
 </template>
