@@ -9,7 +9,7 @@
     <ul class="flex items-center gap-6">
       <li v-for="social in socials" :key="social.label">
         <a :href="social.href" class="transition">
-          <svg class="hover:fill-accent transition fill-white size:5 md:size-5 sm:size-5 xs:size-5">
+          <svg class="hover:fill-accent transition fill-white size-5">
             <use :href="'/sprite.svg#' + social.icon" />
           </svg>
         </a>

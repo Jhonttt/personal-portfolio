@@ -8,9 +8,11 @@
   <nav>
     <ul class="flex items-center gap-6">
       <li v-for="link in links" :key="link.label">
-        <a :href="link.href" class="text-xs text-text-muted transition hover:text-accent">{{
-          link.label
-        }}</a>
+        <a
+          :href="link.href"
+          class="text-xs text-text-muted transition hover:text-accent tracking-wider font-medium"
+          >{{ link.label }}</a
+        >
       </li>
     </ul>
   </nav>
