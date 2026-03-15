@@ -6,10 +6,14 @@
 
 <template>
   <div>
-    <ul class="flex items-center gap-6">
+    <ul class="flex items-center gap-6" aria-label="Social media links">
       <li v-for="social in socials" :key="social.label">
-        <a :href="social.href" class="transition">
-          <svg class="hover:fill-accent transition fill-white size-5">
+        <a :href="social.href" :aria-label="social.label" target="_blank" rel="noopener noreferrer">
+          <svg
+            class="hover:fill-accent transition fill-white size-5"
+            aria-hidden="true"
+            focusable="false"
+          >
             <use :href="'/sprite.svg#' + social.icon" />
           </svg>
         </a>

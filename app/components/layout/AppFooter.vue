@@ -9,9 +9,13 @@
 </script>
 
 <template>
-  <footer class="border-t border-dark-border">
+  <footer class="border-t border-dark-border" aria-label="footer">
     <div class="py-4 flex items-center px-6 max-w-4xl mx-auto w-full relative">
-      <a href="#" class="uppercase font-black flex items-center gap-2 text-text-primary shrink">
+      <a
+        href="#"
+        class="uppercase font-black flex items-center gap-2 text-text-primary shrink"
+        :aria-label="`${logo.title} - go home`"
+      >
         <div class="size-8 flex items-center justify-center bg-accent rounded-md shrink-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +27,8 @@
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
+            focusable="false"
+            aria-hidden="true"
           >
             <polyline points="16 18 22 12 16 6" />
             <polyline points="8 6 2 12 8 18" />
