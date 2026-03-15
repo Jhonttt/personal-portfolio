@@ -32,12 +32,12 @@
     "email": "juanatahonadev@gmail.com"
   },
   "footer": {
-    "copy": "© 2025 JUAN.dev · All rights reserved.",
+    "copy": "© {year} JUAN.DEV · All rights reserved.",
     "socials": [
-      { "label": "X", "icon": "x", "href": "https://x.com" },
+      { "label": "X", "icon": "x-twitter", "href": "https://x.com" },
       { "label": "LinkedIn", "icon": "linkedin", "href": "https://linkedin.com" },
       { "label": "GitHub", "icon": "github", "href": "https://github.com/Jhonttt" },
-      { "label": "Web", "icon": "globe", "href": "https://juan.dev" }
+      { "label": "Web", "icon": "globe", "href": "https://proyectoserena.vercel.app" }
     ]
   }
 }

@@ -2,16 +2,19 @@
 import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  
-  modules: ['@nuxt/eslint'],
+  devtools: { enabled: false },
+
+  modules: ['@nuxt/eslint', '@pinia/nuxt'],
 
   typescript: {
-    strict: true
+    strict: true,
   },
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+    },
   },
 
   css: ['~/assets/css/main.css'],
