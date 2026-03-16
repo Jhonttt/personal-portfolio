@@ -10,7 +10,7 @@
 
 <template>
   <footer class="border-t border-dark-border" aria-label="footer">
-    <div class="py-4 flex items-center px-6 max-w-4xl mx-auto w-full relative">
+    <div class="py-4 flex items-center px-6 max-w-5xl mx-auto w-full relative">
       <a
         href="#"
         class="uppercase font-black flex items-center gap-2 text-text-primary shrink"

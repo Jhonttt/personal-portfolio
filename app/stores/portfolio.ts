@@ -1,3 +1,4 @@
+import { defineStore } from 'pinia'
 import general from '~/data/general.json'
 import navigation from '~/data/navigation.json'
 import projects from '~/data/projects.json'

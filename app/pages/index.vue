@@ -8,6 +8,6 @@
 <template>
   <main>
     <!-- <NuxtErrorBoundary></NuxtErrorBoundary> -->
-    <h2>Default page</h2>
+    <SectionsHeroSection />
   </main>
 </template>
