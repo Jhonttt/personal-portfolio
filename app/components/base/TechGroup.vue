@@ -1,9 +1,11 @@
 <script setup lang="ts">
+  type TechItem = { name: string; icon: string }
+
   interface Props {
     id: string
     label: string
     icon: string
-    items: { name: string; icon: string }[]
+    items: [TechItem, TechItem, TechItem, TechItem]
   }
 
   const props = defineProps<Props>()
@@ -12,6 +14,8 @@
 <template>
   <div
     class="bg-dark-secondary size-85 rounded-xl flex flex-col justify-center p-8 shadow-xl gap-5 border border-dark-border"
+    role="group"
+    :aria-labelledby="`${props.id}`"
   >
     <div class="flex items-center gap-3">
       <div
@@ -23,13 +27,14 @@
           </svg>
         </span>
       </div>
-      <h3 class="text-xl font-bold">{{ props.label }}</h3>
+      <h3 :id="props.id" class="text-xl font-bold">{{ props.label }}</h3>
     </div>
 
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-2 gap-4" role="list">
       <div
         v-for="tech in items"
         :key="tech.name"
+        role="listitem"
         class="flex flex-col items-center justify-center p-4 bg-background-dark/50 border border-dark-border rounded-2xl gap-3 hover:border-accent/50 transition-colors group bg-dark-tertiary"
       >
         <div
