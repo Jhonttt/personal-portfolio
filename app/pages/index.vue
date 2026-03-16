@@ -1,5 +1,13 @@
+<script setup lang="ts">
+  const store = usePortfolioStore()
+  if (!store.isLoaded) {
+    store.init()
+  }
+</script>
+
 <template>
-  <div>
+  <main>
+    <!-- <NuxtErrorBoundary></NuxtErrorBoundary> -->
     <h2>Default page</h2>
-  </div>
+  </main>
 </template>
