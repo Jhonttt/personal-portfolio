@@ -25,7 +25,10 @@
         </a>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+    <div
+      v-if="projects.items && projects.items.length > 0"
+      class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10"
+    >
       <BaseProject
         v-for="project in projects.items"
         :id="project.id"
@@ -36,6 +39,9 @@
         :tags="project.tags"
         :url="project.url"
       />
+    </div>
+    <div v-else class="text-center mt-3">
+      <p class="text-2xl">There aren't projects</p>
     </div>
   </section>
 </template>
