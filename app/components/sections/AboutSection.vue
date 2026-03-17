@@ -11,7 +11,7 @@
   >
     <div class="px-6 max-w-5xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-12">
-        <div class="flex flex-col gap-4" role="region" aria-labelledby="about-heading">
+        <div class="flex flex-col gap-4" aria-labelledby="about-heading">
           <h2 id="about-heading" class="text-2xl font-black">
             {{ about.title }}
           </h2>
@@ -19,7 +19,14 @@
             {{ about.description }}
           </p>
           <div class="flex items-center gap-1 text-accent font-bold">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
               <path
                 fill="currentColor"
                 fill-rule="evenodd"
@@ -31,10 +38,15 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-2 gap-4" role="region" aria-label="About metrics">
-          <BaseCard v-for="card in about.metrics" :key="card.label" :title="card.label">
-            {{ card.value }}
-          </BaseCard>
+        <div role="region" aria-labelledby="metrics-heading">
+          <h3 id="metrics-heading" class="sr-only">Professional metrics</h3>
+          <ul class="grid grid-cols-2 lg:grid-cols-2 gap-4 list-none">
+            <li v-for="card in about.metrics" :key="card.label">
+              <BaseCard :title="card.label">
+                {{ card.value }}
+              </BaseCard>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
