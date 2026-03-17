@@ -16,7 +16,7 @@
     :aria-labelledby="`card-${props.title}`"
     role="group"
   >
-    <div class="rounded-3xl overflow-hidden border border-dark-border mb-5">
+    <div class="rounded-3xl overflow-hidden border border-dark-border mb-5 h-72">
       <img
         :src="props.image"
         :alt="props.title"

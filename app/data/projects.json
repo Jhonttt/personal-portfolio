@@ -15,7 +15,7 @@
       "id": "project-hub",
       "title": "Project Hub",
       "description": "A web for a high school to upload their students jobs.",
-      "image": "/images/projects/project-hub.jpg",
+      "image": "/images/projects/notes.png",
       "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
       "url": "https://aura.example.com"
     }

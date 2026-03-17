@@ -25,6 +25,17 @@
         </a>
       </div>
     </div>
-    <div class="grid" />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+      <BaseProject
+        v-for="project in projects.items"
+        :id="project.id"
+        :key="project.id"
+        :title="project.title"
+        :description="project.description"
+        :image="project.image"
+        :tags="project.tags"
+        :url="project.url"
+      />
+    </div>
   </section>
 </template>
