@@ -10,5 +10,6 @@
     <!-- <NuxtErrorBoundary></NuxtErrorBoundary> -->
     <SectionsHeroSection />
     <SectionsAboutSection />
+    <SectionsProjectsSection />
   </main>
 </template>
