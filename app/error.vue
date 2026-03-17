@@ -9,9 +9,7 @@
 </script>
 
 <template>
-  <div
-    class="error-page min-h-screen flex flex-col items-center justify-center gap-3 text-center border"
-  >
+  <div class="error-page min-h-screen flex flex-col items-center justify-center gap-3 text-center">
     <template v-if="error.status === 404">
       <div>
         <h1>
