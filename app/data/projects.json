@@ -9,7 +9,7 @@
       "description": "A web portal for students with emotional problems",
       "image": "/images/projects/serena-project.png",
       "tags": ["Node.js", "React", "Tailwindcss"],
-      "url": "https://neobank.example.com"
+      "url": "http://proyectoserena.vercel.app"
     },
     {
       "id": "project-hub",
@@ -17,7 +17,7 @@
       "description": "A web for a high school to upload their students jobs.",
       "image": "/images/projects/notes.png",
       "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
-      "url": "https://aura.example.com"
+      "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
     }
   ]
 }
