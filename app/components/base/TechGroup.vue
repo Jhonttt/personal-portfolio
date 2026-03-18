@@ -5,7 +5,7 @@
     id: string
     label: string
     icon: string
-    items: [TechItem, TechItem, TechItem, TechItem]
+    items: TechItem[]
   }
 
   const props = defineProps<Props>()
@@ -13,36 +13,44 @@
 
 <template>
   <div
-    class="bg-dark-secondary size-85 rounded-xl flex flex-col justify-center p-8 shadow-xl gap-5 border border-dark-border"
+    class="bg-dark-secondary lg:size-80 rounded-xl flex flex-col justify-center p-8 shadow-xl gap-5 border border-dark-border md:size-60"
     role="group"
     :aria-labelledby="`${props.id}`"
   >
     <div class="flex items-center gap-3">
       <div
-        class="size-12 rounded-xl bg-accent-muted flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+        class="lg:size-12 rounded-xl bg-accent-muted flex items-center justify-center text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
       >
         <span class="material-symbols-outlined">
-          <svg class="transition fill-accent size-5" aria-hidden="true" focusable="false">
-            <use :href="'/sprite.svg#' + props.icon" />
+          <svg
+            class="transition fill-accent md:size-6 size-8 lg:size-8"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use :href="'/icons/skills.svg#' + props.icon" />
           </svg>
         </span>
       </div>
-      <h3 :id="props.id" class="text-xl font-bold">{{ props.label }}</h3>
+      <h3 :id="props.id" class="lg:text-xl font-bold md:text-lg text-xl">{{ props.label }}</h3>
     </div>
 
     <div class="grid grid-cols-2 gap-4" role="list">
       <div
-        v-for="tech in items"
+        v-for="tech in props.items"
         :key="tech.name"
         role="listitem"
-        class="flex flex-col items-center justify-center p-4 bg-background-dark/50 border border-dark-border rounded-2xl gap-3 hover:border-accent/50 transition-colors group bg-dark-tertiary"
+        class="flex flex-col items-center justify-center lg:p-4 bg-background-dark/50 border border-dark-border rounded-2xl gap-3 hover:border-accent/50 transition-colors group bg-dark-tertiary md:p-2 p-4"
       >
         <div
-          class="size-12 rounded-xl bg-white/5 flex items-center justify-center text-primary group-hover:scale-110 transition-transform"
+          class="lg:size-12 rounded-xl bg-white/5 flex items-center justify-center text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
         >
-          <span class="material-symbols-outlined text-3xl">
-            <svg class="transition fill-white size-5" aria-hidden="true" focusable="false">
-              <use :href="'/sprite.svg#' + tech.icon" />
+          <span class="text-3xl">
+            <svg
+              class="transition fill-accent md:size-6 size-8 lg:size-8"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use :href="'/icons/skills.svg#' + tech.icon" />
             </svg>
           </span>
         </div>

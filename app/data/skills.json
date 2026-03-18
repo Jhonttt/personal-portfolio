@@ -5,34 +5,34 @@
     {
       "id": "frontend",
       "label": "Frontend",
-      "icon": "layout",
+      "icon": "icon-frontend",
       "items": [
-        { "name": "React", "icon": "react" },
-        { "name": "Vue", "icon": "vue" },
-        { "name": "TypeScript", "icon": "typescript" },
-        { "name": "Tailwind", "icon": "tailwind" }
+        { "name": "React", "icon": "icon-react" },
+        { "name": "Vue", "icon": "icon-vue" },
+        { "name": "TypeScript", "icon": "icon-typescript" },
+        { "name": "Tailwind", "icon": "icon-tailwind" }
       ]
     },
     {
       "id": "backend",
       "label": "Backend",
-      "icon": "server",
+      "icon": "icon-backend",
       "items": [
-        { "name": "Node.js", "icon": "nodejs" },
-        { "name": "Laravel", "icon": "postgres" },
-        { "name": "MongoDB", "icon": "mongodb" },
-        { "name": "Java", "icon": "redis" }
+        { "name": "Node.js", "icon": "icon-nodejs" },
+        { "name": "Laravel", "icon": "icon-laravel" },
+        { "name": "MongoDB", "icon": "icon-mongodb" },
+        { "name": "Java", "icon": "icon-java" }
       ]
     },
     {
       "id": "other",
       "label": "Other",
-      "icon": "wrench",
+      "icon": "icon-other",
       "items": [
-        { "name": "Vercel", "icon": "vercel" },
-        { "name": "AWS", "icon": "aws" },
-        { "name": "Git", "icon": "git" },
-        { "name": "Figma", "icon": "figma" }
+        { "name": "Vercel", "icon": "icon-vercel" },
+        { "name": "AWS", "icon": "icon-aws" },
+        { "name": "Git", "icon": "icon-git" },
+        { "name": "Figma", "icon": "icon-figma" }
       ]
     }
   ]

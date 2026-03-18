@@ -6,7 +6,7 @@
 
 <template>
   <section id="hero" aria-labelledby="hero-heading" class="py-20">
-    <div class="px-6 max-w-5xl mx-auto w-full">
+    <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 content-center">
         <div class="flex flex-col gap-5" role="region" aria-labelledby="hero-heading">
           <h1 id="hero-heading" class="text-4xl font-black">
