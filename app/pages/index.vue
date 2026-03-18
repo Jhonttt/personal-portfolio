@@ -19,28 +19,26 @@
 </script>
 
 <template>
-  <main aria-label="Portfolio of Juan Atahona">
-    <NuxtErrorBoundary>
-      <template #error="{ clearError }">
-        <div
-          role="alert"
-          class="min-h-screen flex flex-col items-center justify-center gap-3 text-center"
+  <NuxtErrorBoundary>
+    <template #error="{ clearError }">
+      <div
+        role="alert"
+        class="min-h-screen flex flex-col items-center justify-center gap-3 text-center"
+      >
+        <p class="text-secondary">Something went wrong loading the portfolio.</p>
+        <button
+          class="border-2 rounded-md py-1.5 px-3.5 text-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
+          @click="clearError()"
         >
-          <p class="text-secondary">Something went wrong loading the portfolio.</p>
-          <button
-            class="border-2 rounded-md py-1.5 px-3.5 text-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
-            @click="clearError()"
-          >
-            Try again
-          </button>
-        </div>
-      </template>
+          Try again
+        </button>
+      </div>
+    </template>
 
-      <SectionsHeroSection />
-      <SectionsAboutSection />
-      <SectionsSkillsSection />
-      <SectionsProjectsSection />
-      <SectionsContactSection />
-    </NuxtErrorBoundary>
-  </main>
+    <SectionsHeroSection />
+    <SectionsAboutSection />
+    <SectionsSkillsSection />
+    <SectionsProjectsSection />
+    <SectionsContactSection />
+  </NuxtErrorBoundary>
 </template>
