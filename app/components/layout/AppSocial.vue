@@ -6,7 +6,7 @@
 
 <template>
   <div>
-    <ul class="flex items-center gap-6" aria-label="Social media links">
+    <ul class="flex items-center gap-6">
       <li v-for="social in socials" :key="social.label">
         <a :href="social.href" :aria-label="social.label" target="_blank" rel="noopener noreferrer">
           <svg
