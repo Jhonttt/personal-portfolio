@@ -21,8 +21,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: 'es' },
+      htmlAttrs: { lang: 'en' },
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     },
   },
 })
