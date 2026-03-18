@@ -22,8 +22,12 @@
         class="lg:size-12 rounded-xl bg-accent-muted flex items-center justify-center text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
       >
         <span class="material-symbols-outlined">
-          <svg class="transition fill-accent size-5" aria-hidden="true" focusable="false">
-            <use :href="'/sprite.svg#' + props.icon" />
+          <svg
+            class="transition fill-accent md:size-6 size-8 lg:size-8"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use :href="'/icons/skills.svg#' + props.icon" />
           </svg>
         </span>
       </div>
@@ -41,8 +45,12 @@
           class="lg:size-12 rounded-xl bg-white/5 flex items-center justify-center text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
         >
           <span class="text-3xl">
-            <svg class="transition fill-white size-5" aria-hidden="true" focusable="false">
-              <use :href="'/sprite.svg#' + tech.icon" />
+            <svg
+              class="transition fill-accent md:size-6 size-8 lg:size-8"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use :href="'/icons/skills.svg#' + tech.icon" />
             </svg>
           </span>
         </div>
