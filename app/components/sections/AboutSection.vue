@@ -9,7 +9,7 @@
     aria-labelledby="about-heading"
     class="py-20 bg-dark-secondary border-y border-dark-border"
   >
-    <div class="px-6 max-w-5xl mx-auto w-full">
+    <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-12">
         <div class="flex flex-col gap-4" aria-labelledby="about-heading">
           <h2 id="about-heading" class="text-2xl font-black">

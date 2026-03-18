@@ -7,7 +7,7 @@
   <section
     id="projects"
     aria-labelledby="project-heading"
-    class="py-20 px-6 max-w-5xl mx-auto w-full"
+    class="py-20 px-6 max-w-6xl mx-auto w-full"
   >
     <div class="flex flex-col gap-2" role="region" aria-labelledby="hero-heading">
       <h2 id="projects-heading" class="text-2xl font-black">
