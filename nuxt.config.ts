@@ -18,4 +18,11 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  app: {
+    head: {
+      htmlAttrs: { lang: 'es' },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+  },
 })
