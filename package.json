@@ -33,6 +33,7 @@
     "@commitlint/cli": "^20.4.4",
     "@commitlint/config-conventional": "^20.4.4",
     "@nuxt/eslint": "^1.15.2",
+    "@nuxtjs/sitemap": "^7.6.0",
     "@tailwindcss/vite": "^4.2.1",
     "@types/node": "^25.5.0",
     "eslint": "^9.39.4",
