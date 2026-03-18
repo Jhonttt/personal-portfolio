@@ -12,5 +12,6 @@
     <SectionsAboutSection />
     <SectionsSkillsSection />
     <SectionsProjectsSection />
+    <SectionsContactSection />
   </main>
 </template>

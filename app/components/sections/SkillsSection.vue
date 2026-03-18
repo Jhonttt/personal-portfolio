@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <section id="skills" aria-labelledby="skills-heading" class="py-20 px-6 max-w-6xl mx-auto w-full">
+  <section id="stack" aria-labelledby="skills-heading" class="py-20 px-6 max-w-6xl mx-auto w-full">
     <div class="flex flex-col gap-2">
       <h2 id="skills-heading" class="text-2xl font-black text-center">
         {{ skills.title }}
