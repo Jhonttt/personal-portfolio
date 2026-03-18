@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <footer class="border-t border-dark-border" aria-label="footer">
+  <footer class="border-t border-dark-border">
     <div class="py-4 flex items-center px-6 max-w-7xl mx-auto w-full relative">
       <a
         href="#"

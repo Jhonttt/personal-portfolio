@@ -8,7 +8,7 @@
   <header class="border-b border-dark-border">
     <div class="py-4 flex items-center px-6 max-w-7xl mx-auto w-full relative">
       <a
-        href="/"
+        href="#"
         class="uppercase font-black flex items-center gap-2 text-text-primary shrink"
         :aria-label="`${navigation.logo.title} - go home`"
       >
