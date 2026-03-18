@@ -14,16 +14,12 @@ export const usePortfolioStore = defineStore('portfolio', () => {
   const skillsData = ref(skills)
 
   function init() {
-    try {
-      generalData.value = general
-      navigationData.value = navigation
-      projectsData.value = projects
-      skillsData.value = skills
-      isLoaded.value = true
-      loadError.value = null
-    } catch {
-      loadError.value = 'It can be loaded the portfolio data. Please try again later.'
-    }
+    generalData.value = general
+    navigationData.value = navigation
+    projectsData.value = projects
+    skillsData.value = skills
+    isLoaded.value = true
+    loadError.value = null
   }
 
   return {
