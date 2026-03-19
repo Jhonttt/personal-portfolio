@@ -7,7 +7,7 @@
   <section
     id="about"
     aria-labelledby="about-heading"
-    class="py-20 bg-dark-secondary border-y border-dark-border"
+    class="py-20 bg-dark-secondary border-y border-dark-border md:px-10"
   >
     <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-12">

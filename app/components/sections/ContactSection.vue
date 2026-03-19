@@ -6,7 +6,7 @@
   <section
     id="contact"
     aria-labelledby="contact-heading"
-    class="py-20 bg-dark-secondary border-y border-dark-border text-center"
+    class="py-20 bg-dark-secondary border-y border-dark-border text-center md:px-10"
   >
     <div class="px-6 max-w-2xl mx-auto w-full flex flex-col items-center gap-3">
       <h2 id="contact-heading" class="text-fluid-2xl font-black">
