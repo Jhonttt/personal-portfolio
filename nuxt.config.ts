@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
-  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/sitemap'],
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/sitemap', '@nuxtjs/google-fonts'],
 
   typescript: {
     strict: true,
@@ -29,6 +29,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+    },
+  },
+
+  googleFonts: {
+    families: {
+      'Public+Sans': [300, 400, 500, 600, 700, 800, 900],
     },
   },
 })
