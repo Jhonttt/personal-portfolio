@@ -9,7 +9,10 @@
     <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-center content-center md:gap-12">
         <div class="flex flex-col gap-5">
-          <h1 id="hero-heading" class="text-fluid-4xl font-black leading-[0.9] tracking-tight">
+          <h1
+            id="hero-heading"
+            class="md:text-fluid-4xl font-black leading-[0.9] tracking-tight text-fluid-5xl"
+          >
             {{ hero.headline }} <span class="text-accent">{{ hero.highlight }}</span>
             {{ hero.headlineEnd }}
           </h1>

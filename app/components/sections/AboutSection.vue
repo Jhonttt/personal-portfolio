@@ -12,7 +12,7 @@
     <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 lg:grid-cols-2 items-start gap-6 md:gap-8 lg:gap-10">
         <div class="flex flex-col gap-4">
-          <h2 id="about-heading" class="text-fluid-2xl font-black">
+          <h2 id="about-heading" class="md:text-fluid-2xl font-black text-fluid-3xl">
             {{ about.title }}
           </h2>
           <p class="text-text-muted text-pretty font-bold text-fluid-lg md:text-fluid-md">
