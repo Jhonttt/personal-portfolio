@@ -19,7 +19,7 @@
   >
     <div class="flex items-center gap-3">
       <div
-        class="lg:size-12 rounded-xl bg-accent-muted flex items-center justify-center text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
+        class="lg:size-12 rounded-xl bg-accent-muted flex items-center justify-center text-text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
       >
         <svg
           class="transition fill-accent md:size-6 size-8 lg:size-8"
@@ -29,7 +29,9 @@
           <use :href="'/icons/skills.svg#' + props.icon" />
         </svg>
       </div>
-      <h3 :id="props.id" class="lg:text-xl font-bold md:text-lg text-xl">{{ props.label }}</h3>
+      <h3 :id="props.id" class="lg:text-fluid-xl font-bold md:text-fluid-lg text-fluid-xl">
+        {{ props.label }}
+      </h3>
     </div>
 
     <ul class="grid grid-cols-2 gap-4">
@@ -39,7 +41,7 @@
         class="flex flex-col items-center justify-center lg:p-4 bg-background-dark/50 border border-dark-border rounded-2xl gap-3 hover:border-accent/50 transition-colors group bg-dark-tertiary md:p-2 p-4"
       >
         <div
-          class="lg:size-12 rounded-xl bg-white/5 flex items-center justify-center text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
+          class="lg:size-12 rounded-xl bg-white/5 flex items-center justify-center text-text-primary group-hover:scale-110 transition-transform md:size-8 size-12"
         >
           <svg
             class="transition fill-accent md:size-6 size-8 lg:size-8"
@@ -49,7 +51,7 @@
             <use :href="'/icons/skills.svg#' + tech.icon" />
           </svg>
         </div>
-        <span class="text-xs font-bold uppercase tracking-wider text-slate-400">{{
+        <span class="text-fluid-xs font-bold uppercase tracking-wider text-text-muted">{{
           tech.name
         }}</span>
       </li>

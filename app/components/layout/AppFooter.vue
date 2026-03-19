@@ -41,7 +41,9 @@
         <LayoutAppSocial />
       </div>
 
-      <p class="text-xs lg:text-sm md:text-sm ml-auto shrink-0">{{ footerCopy }}</p>
+      <p class="text-fluid-xs lg:text-fluid-sm md:text-fluid-sm ml-auto shrink-0">
+        {{ footerCopy }}
+      </p>
     </div>
   </footer>
 </template>

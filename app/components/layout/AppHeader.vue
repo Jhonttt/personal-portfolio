@@ -40,7 +40,7 @@
       <div class="ml-auto flex items-center gap-4">
         <a
           :href="navigation.cta.href"
-          class="border-2 rounded-md py-1.5 px-3.5 text-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
+          class="border-2 rounded-md py-1.5 px-3.5 text-fluid-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
         >
           {{ navigation.cta.label }}
         </a>

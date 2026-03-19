@@ -14,11 +14,11 @@
   >
     <p
       :id="`card-${props.title}`"
-      class="text-text-muted uppercase text-xs tracking-widest font-black"
+      class="text-text-muted uppercase text-fluid-xs tracking-widest font-black"
     >
       {{ props.title }}
     </p>
-    <p class="text-text-primary font-black text-xl lg:text-2xl">
+    <p class="text-text-primary font-black text-fluid-xl lg:text-fluid-2xl">
       <slot>Default</slot>
     </p>
   </div>

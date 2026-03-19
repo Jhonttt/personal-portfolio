@@ -25,9 +25,9 @@
         role="alert"
         class="min-h-screen flex flex-col items-center justify-center gap-3 text-center"
       >
-        <p class="text-secondary">Something went wrong loading the portfolio.</p>
+        <p class="text-text-primary">Something went wrong loading the portfolio.</p>
         <button
-          class="border-2 rounded-md py-1.5 px-3.5 text-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
+          class="border-2 rounded-md py-1.5 px-3.5 text-fluid-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
           @click="clearError()"
         >
           Try again

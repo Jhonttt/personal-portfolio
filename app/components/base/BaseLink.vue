@@ -10,7 +10,7 @@
 <template>
   <a
     :href="props.link"
-    :class="['border-2 rounded-md text-xs font-bold transition shadow-md', props.class]"
+    :class="['border-2 rounded-md text-fluid-xs font-bold transition shadow-md', props.class]"
   >
     <slot>Learn more</slot>
   </a>

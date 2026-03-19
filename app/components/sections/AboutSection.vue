@@ -12,7 +12,7 @@
     <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-12">
         <div class="flex flex-col gap-4">
-          <h2 id="about-heading" class="text-2xl font-black">
+          <h2 id="about-heading" class="text-fluid-2xl font-black">
             {{ about.title }}
           </h2>
           <p class="text-text-muted text-pretty font-bold leading-relaxed">
@@ -34,7 +34,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <span class="text-sm">{{ about.badge }}</span>
+            <span class="text-fluid-sm">{{ about.badge }}</span>
           </div>
         </div>
 

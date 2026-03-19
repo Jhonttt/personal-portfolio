@@ -11,7 +11,7 @@
     <li
       v-for="(label, index) in props.labels"
       :key="label"
-      class="text-accent text-xs uppercase font-bold tracking-wider"
+      class="text-accent text-fluid-xs uppercase font-bold tracking-wider"
     >
       {{ label
       }}<template v-if="index < props.labels.length - 1"

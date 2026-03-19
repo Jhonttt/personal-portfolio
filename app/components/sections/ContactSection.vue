@@ -9,7 +9,7 @@
     class="py-20 bg-dark-secondary border-y border-dark-border text-center"
   >
     <div class="px-6 max-w-2xl mx-auto w-full flex flex-col items-center gap-3">
-      <h2 id="contact-heading" class="text-2xl font-black">
+      <h2 id="contact-heading" class="text-fluid-2xl font-black">
         {{ contact.title }}
       </h2>
       <p class="text-text-muted text-pretty font-bold leading-relaxed">
