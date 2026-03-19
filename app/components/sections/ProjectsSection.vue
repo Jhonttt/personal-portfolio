@@ -6,10 +6,10 @@
 <template>
   <section
     id="projects"
-    aria-labelledby="project-heading"
+    aria-labelledby="projects-heading"
     class="py-20 px-6 max-w-6xl mx-auto w-full"
   >
-    <div class="flex flex-col gap-2" role="region" aria-labelledby="hero-heading">
+    <div class="flex flex-col gap-2">
       <h2 id="projects-heading" class="text-2xl font-black">
         {{ projects.title }}
       </h2>
