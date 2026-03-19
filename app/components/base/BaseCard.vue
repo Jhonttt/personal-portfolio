@@ -12,7 +12,10 @@
     role="group"
     :aria-labelledby="`card-${props.title}`"
   >
-    <p class="text-text-muted uppercase text-xs tracking-widest font-black">
+    <p
+      :id="`card-${props.title}`"
+      class="text-text-muted uppercase text-xs tracking-widest font-black"
+    >
       {{ props.title }}
     </p>
     <p class="text-text-primary font-black text-xl lg:text-2xl">

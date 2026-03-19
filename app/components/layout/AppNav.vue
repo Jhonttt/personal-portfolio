@@ -10,6 +10,7 @@
       <li v-for="link in links" :key="link.label">
         <a
           :href="link.href"
+          :aria-current="$route.hash === link.href ? 'true' : undefined"
           class="text-xs text-text-muted transition hover:text-accent tracking-wider font-medium"
           >{{ link.label }}</a
         >

@@ -10,9 +10,8 @@
 <template>
   <a
     :href="props.link"
-    :aria-label="`Link to ${props.link}`"
     :class="['border-2 rounded-md text-xs font-bold transition shadow-md', props.class]"
   >
-    <slot>Default button</slot>
+    <slot>Learn more</slot>
   </a>
 </template>
