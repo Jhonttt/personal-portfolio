@@ -36,6 +36,20 @@
   --text-4xl: 3.5rem; /* 56px */
   --text-5xl: 4.5rem; /* 72px – hero */
 
+  /* ── FLUID TYPOGRAPHY ──────────────────────────── */
+  --text-fluid-xs: clamp(0.6875rem, 0.6458rem + 0.2083vw, 0.8125rem);
+  --text-fluid-sm: clamp(0.8125rem, 0.7708rem + 0.2083vw, 0.9375rem);
+  --text-fluid-base: clamp(0.9375rem, 0.875rem + 0.3125vw, 1.125rem);
+  --text-fluid-lg: clamp(1.125rem, 1.0417rem + 0.4167vw, 1.375rem);
+  --text-fluid-xl: clamp(1.25rem, 1.0833rem + 0.8333vw, 1.75rem);
+  --text-fluid-2xl: clamp(1.625rem, 1.375rem + 1.25vw, 2.375rem);
+  --text-fluid-3xl: clamp(2rem, 1.6667rem + 1.6667vw, 3.25rem);
+  --text-fluid-4xl: clamp(2.5rem, 2rem + 2.5vw, 4.25rem);
+  --text-fluid-5xl: clamp(3.25rem, 2.5833rem + 3.3333vw, 5.5rem);
+
+  --leading-tight: 1.1;
+  --leading-normal: 1.6;
+
   --leading-tight: 1.1;
   --leading-normal: 1.6;
 
@@ -85,7 +99,7 @@
   }
 
   html {
-    @apply scroll-smooth text-base;
+    @apply scroll-smooth text-fluid-base;
     -webkit-text-size-adjust: 100%;
   }
 
