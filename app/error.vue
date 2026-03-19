@@ -39,11 +39,11 @@
       </div>
     </template>
 
-    <BaseButton
+    <BaseLink
       link="/"
       class="border-2 rounded-md py-1.5 px-3.5 text-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
       @click="handleError"
-      >Go home</BaseButton
+      >Go home</BaseLink
     >
   </main>
 </template>

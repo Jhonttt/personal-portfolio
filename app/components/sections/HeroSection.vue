@@ -15,18 +15,18 @@
           </h1>
           <p class="text-text-muted text-pretty">{{ hero.description }}</p>
           <div class="flex gap-4">
-            <BaseButton
+            <BaseLink
               :link="hero.cta.primary.href"
               class="bg-accent text-text-primary border-accent hover:bg-transparent hover:text-accent px-5 py-3"
             >
               {{ hero.cta.primary.label }}
-            </BaseButton>
-            <BaseButton
+            </BaseLink>
+            <BaseLink
               :link="hero.cta.secondary.href"
               class="bg-transparent text-text-primary border-dark-border hover:border-text-primary px-5 py-3"
             >
               {{ hero.cta.secondary.label }}
-            </BaseButton>
+            </BaseLink>
           </div>
         </div>
         <div class="relative">
