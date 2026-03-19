@@ -11,7 +11,7 @@
   >
     <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-12">
-        <div class="flex flex-col gap-4" aria-labelledby="about-heading">
+        <div class="flex flex-col gap-4">
           <h2 id="about-heading" class="text-2xl font-black">
             {{ about.title }}
           </h2>
