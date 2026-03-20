@@ -29,7 +29,10 @@
     <div class="flex items-center justify-between">
       <div class="flex flex-col gap-1">
         <BaseBadge :labels="props.tags" />
-        <h3 :id="`project-${props.title}`" class="text-xl font-bold">
+        <h3
+          :id="`project-${props.title}`"
+          class="md:text-fluid-xl font-bold tracking-tighter text-fluid-2xl"
+        >
           {{ props.title }}
           <span class="sr-only">(opens in new tab)</span>
         </h3>
@@ -38,21 +41,12 @@
         class="size-12 rounded-full border border-dark-border flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-colors fill-text-primary"
         aria-hidden="true"
       >
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M5.4 20L4 18.6L15.6 7H9V5h10v10h-2V8.4z" />
-        </svg>
+        <span class="material-symbols-outlined text-white">north_east</span>
       </div>
     </div>
     <p
       :id="`project-desc-${props.title}`"
-      class="text-text-muted text-pretty font-bold leading-relaxed text-sm"
+      class="text-text-muted text-pretty font-bold leading-relaxed md:text-fluid-sm text-fluid-md"
     >
       {{ props.description }}
     </p>

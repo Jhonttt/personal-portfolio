@@ -5,15 +5,18 @@
 </script>
 
 <template>
-  <section id="hero" aria-labelledby="hero-heading" class="py-20">
+  <section id="hero" aria-labelledby="hero-heading" class="py-20 md:px-10">
     <div class="px-6 max-w-6xl mx-auto w-full">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 content-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center content-center md:gap-12">
         <div class="flex flex-col gap-5">
-          <h1 id="hero-heading" class="text-4xl font-black">
+          <h1
+            id="hero-heading"
+            class="md:text-fluid-4xl font-black leading-[0.9] tracking-tight text-fluid-5xl"
+          >
             {{ hero.headline }} <span class="text-accent">{{ hero.highlight }}</span>
             {{ hero.headlineEnd }}
           </h1>
-          <p class="text-text-muted text-pretty">{{ hero.description }}</p>
+          <p class="text-text-muted text-pretty text-lg md:text-md">{{ hero.description }}</p>
           <div class="flex gap-4">
             <BaseLink
               :link="hero.cta.primary.href"
@@ -33,14 +36,14 @@
           <img
             :src="hero.image.src"
             :alt="hero.image.alt"
-            class="w-full h-110 mt-10 rounded-md object-cover"
+            class="md:w-110 w-full md:h-110 h-full mt-10 rounded-2xl object-cover"
           />
           <div
             class="absolute -bottom-6 -left-6 text-text-primary px-4 py-2 rounded-md shadow-lg bg-dark-primary border border-dark-border flex flex-col items-start gap-1"
             aria-hidden="true"
           >
-            <span class="text-text-muted text-xs uppercase font-bold">Trusted by</span>
-            <p class="font-bold text-xs text-text-primary">25+ Global Clients</p>
+            <span class="text-text-muted text-fluid-xs uppercase font-bold">Trusted by</span>
+            <p class="font-bold text-fluid-xs text-text-primary">25+ Global Clients</p>
           </div>
         </div>
       </div>
