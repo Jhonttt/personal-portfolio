@@ -29,7 +29,10 @@
     <div class="flex items-center justify-between">
       <div class="flex flex-col gap-1">
         <BaseBadge :labels="props.tags" />
-        <h3 :id="`project-${props.title}`" class="text-fluid-xl font-bold">
+        <h3
+          :id="`project-${props.title}`"
+          class="md:text-fluid-xl font-bold tracking-tighter text-fluid-2xl"
+        >
           {{ props.title }}
           <span class="sr-only">(opens in new tab)</span>
         </h3>
@@ -52,7 +55,7 @@
     </div>
     <p
       :id="`project-desc-${props.title}`"
-      class="text-text-muted text-pretty font-bold leading-relaxed text-fluid-sm"
+      class="text-text-muted text-pretty font-bold leading-relaxed md:text-fluid-sm text-fluid-md"
     >
       {{ props.description }}
     </p>
