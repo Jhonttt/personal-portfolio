@@ -6,7 +6,7 @@
     description: 'Fullstack Developer focused on visual depth and clean execution.',
     ogTitle: 'Juan Atahona | FullStack Developer',
     ogDescription: 'Fullstack Developer focused on visual depth and clean execution.',
-    ogImage: `${config.public.siteUrl}/og-image.jpg`,
+    ogImage: `${config.public.siteUrl}/og-image.webp`,
     ogUrl: config.public.siteUrl,
     ogType: 'website',
     twitterCard: 'summary_large_image',

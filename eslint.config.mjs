@@ -6,7 +6,7 @@ export default withNuxt({
     'no-console': 'warn',
     'no-unused-vars': 'warn',
 
-    'vue/html-self-closing': 'warn',
+    'vue/html-self-closing': 'off',
     'vue/no-unused-components': 'warn',   
     'vue/no-unused-vars': 'warn',        
     'vue/require-v-for-key': 'error', 

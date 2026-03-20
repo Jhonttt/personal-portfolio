@@ -37,7 +37,11 @@
             :src="hero.image.src"
             :alt="hero.image.alt"
             class="md:w-110 w-full md:h-110 h-full mt-10 rounded-2xl object-cover"
+            width="440"
+            height="440"
+            fetchpriority="high"
           />
+
           <div
             class="absolute -bottom-6 -left-6 text-text-primary px-4 py-2 rounded-md shadow-lg bg-dark-primary border border-dark-border flex flex-col items-start gap-1"
             aria-hidden="true"

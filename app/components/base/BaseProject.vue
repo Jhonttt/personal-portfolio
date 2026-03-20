@@ -24,6 +24,9 @@
         :src="props.image"
         :alt="`Captura de pantalla del proyecto ${props.title}`"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        width="800"
+        height="600"
+        loading="lazy"
       />
     </div>
     <div class="flex items-center justify-between">
