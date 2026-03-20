@@ -9,15 +9,17 @@
     class="py-20 bg-dark-secondary border-y border-dark-border text-center md:px-10"
   >
     <div class="px-6 max-w-2xl mx-auto w-full flex flex-col items-center gap-3">
-      <h2 id="contact-heading" class="text-fluid-2xl font-black">
+      <h2 id="contact-heading" class="md:text-fluid-2xl font-black text-fluid-3xl">
         {{ contact.title }}
       </h2>
-      <p class="text-text-muted text-pretty font-bold leading-relaxed">
+      <p
+        class="text-text-muted text-pretty font-bold leading-relaxed md:text-fluid-md text-fluid-lg"
+      >
         {{ contact.description }}
       </p>
       <a
         :href="`mailto:${contact.email}`"
-        class="group relative mt-2 inline-flex items-center gap-3 px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+        class="group relative mt-2 inline-flex items-center gap-3 px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:text-fluid-md text-fluid-lg"
         :aria-label="`Send email to ${contact.email}`"
       >
         <span
@@ -31,14 +33,12 @@
           {{ contact.email }}
         </span>
         <span
-          class="relative size-7 rounded-full border border-dark-border group-hover:border-accent group-hover:bg-accent flex items-center justify-center transition-all duration-300"
+          class="relative size-10 rounded-full border border-dark-border group-hover:border-accent group-hover:bg-accent flex items-center justify-center transition-all duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="11"
-            height="11"
             viewBox="0 0 24 24"
-            class="fill-text-muted group-hover:fill-white transition-all duration-300 group-hover:translate-x-px group-hover:-translate-y-px"
+            class="fill-text-muted group-hover:fill-white transition-all duration-300 group-hover:translate-x-px group-hover:-translate-y-px size-6"
             aria-hidden="true"
             focusable="false"
           >

@@ -41,16 +41,7 @@
         class="size-12 rounded-full border border-dark-border flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-colors fill-text-primary"
         aria-hidden="true"
       >
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M5.4 20L4 18.6L15.6 7H9V5h10v10h-2V8.4z" />
-        </svg>
+        <span class="material-symbols-outlined text-white">north_east</span>
       </div>
     </div>
     <p
