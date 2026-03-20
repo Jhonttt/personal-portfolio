@@ -4,13 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
-  modules: [
-    '@nuxt/eslint',
-    '@pinia/nuxt',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/google-fonts',
-    '@nuxt/image',
-  ],
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/sitemap', '@nuxtjs/google-fonts'],
 
   typescript: {
     strict: true,
@@ -42,10 +36,5 @@ export default defineNuxtConfig({
     families: {
       'Public+Sans': [300, 400, 500, 600, 700, 800, 900],
     },
-  },
-
-  image: {
-    quality: 80,
-    format: ['webp'],
   },
 })

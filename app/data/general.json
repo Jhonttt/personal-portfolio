@@ -5,7 +5,7 @@
     "headlineEnd": "products",
     "description": "Fullstack Developer focused on visual depth and clean execution. Building high-performance applications with modern architecture.",
     "image": {
-      "src": "/images/hero.png",
+      "src": "/images/hero.webp",
       "alt": "Hero visual"
     },
     "cta": {

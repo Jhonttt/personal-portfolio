@@ -7,7 +7,7 @@
       "id": "serena-project",
       "title": "Serena Project",
       "description": "A web portal for students with emotional problems",
-      "image": "/images/projects/serena-project.png",
+      "image": "/images/projects/serena-project.webp",
       "tags": ["Node.js", "React", "Tailwindcss"],
       "url": "http://proyectoserena.vercel.app"
     },
@@ -15,23 +15,7 @@
       "id": "project-hub",
       "title": "Project Hub",
       "description": "A web for a high school to upload their students jobs.",
-      "image": "/images/projects/notes.png",
-      "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
-      "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
-    },
-    {
-      "id": "project-hub",
-      "title": "Project Hub",
-      "description": "A web for a high school to upload their students jobs.",
-      "image": "/images/projects/notes.png",
-      "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
-      "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
-    },
-    {
-      "id": "project-hub",
-      "title": "Project Hub",
-      "description": "A web for a high school to upload their students jobs.",
-      "image": "/images/projects/notes.png",
+      "image": "/images/projects/notes.webp",
       "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
       "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
     }

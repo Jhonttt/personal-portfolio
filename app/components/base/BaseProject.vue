@@ -20,13 +20,13 @@
     rel="noopener noreferrer"
   >
     <div class="rounded-3xl overflow-hidden border border-dark-border mb-5 h-72">
-      <NuxtImg
+      <img
         :src="props.image"
         :alt="`Captura de pantalla del proyecto ${props.title}`"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        loading="lazy"
         width="800"
         height="600"
+        loading="lazy"
       />
     </div>
     <div class="flex items-center justify-between">
