@@ -36,5 +36,5 @@ jobs:
             cd /var/www/portfolio
             git pull origin main
             npm ci
-            npm run build
-            pm2 restart portfolio
+            npm run generate
+            cp -r dist/* /var/www/html/
