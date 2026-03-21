@@ -10,7 +10,7 @@
     },
     "cta": {
       "primary": { "label": "View My Work", "href": "#projects" },
-      "secondary": { "label": "Download CV", "href": "/cv.pdf" }
+      "secondary": { "label": "Download CV", "href": "#" }
     },
     "badge": {
       "label": "TRUSTED BY",
