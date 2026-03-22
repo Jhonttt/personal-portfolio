@@ -6,12 +6,12 @@
   })
 
   useSeoMeta({
-    title: 'Juan Atahona | Proyects',
-    description: 'Fullstack Developer focused on visual depth and clean execution.',
-    ogTitle: 'Juan Atahona | Proyects',
-    ogDescription: 'Fullstack Developer focused on visual depth and clean execution.',
+    title: 'Projects | Juan Atahona',
+    description: 'A collection of fullstack projects built with modern web technologies.',
+    ogTitle: 'Projects | Juan Atahona',
+    ogDescription: 'A collection of fullstack projects built with modern web technologies.',
     ogImage: `${config.public.siteUrl}/og-image.webp`,
-    ogUrl: config.public.siteUrl,
+    ogUrl: `${config.public.siteUrl}/projects`,
     ogType: 'website',
     twitterCard: 'summary_large_image',
   })
