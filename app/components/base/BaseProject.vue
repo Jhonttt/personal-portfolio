@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import { usePublicAsset } from '~/composables/usePublicAsset'
+
   interface Props {
     title: string
     description: string
@@ -21,7 +23,7 @@
   >
     <div class="rounded-3xl overflow-hidden border border-dark-border mb-5 h-72">
       <img
-        :src="props.image"
+        :src="usePublicAsset(props.image)"
         :alt="`Captura de pantalla del proyecto ${props.title}`"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         width="800"
