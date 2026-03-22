@@ -21,15 +21,6 @@
       </a>
 
       <LayoutDefaultAppNav />
-
-      <div class="flex items-center gap-4">
-        <a
-          :href="navigation.cta.href"
-          class="px-4 py-1.5 rounded-lg border-2 border-accent text-primary text-fluid-sm text-accent font-bold hover:bg-accent hover:text-text-primary hover:border-accent transition-all"
-        >
-          {{ navigation.cta.label }}
-        </a>
-      </div>
     </div>
   </header>
 </template>

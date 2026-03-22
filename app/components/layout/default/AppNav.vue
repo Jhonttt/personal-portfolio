@@ -5,10 +5,7 @@
 </script>
 
 <template>
-  <nav
-    aria-label="Main navigation"
-    class="hidden md:flex md absolute left-1/2 -translate-x-1/2 text-fluid-sm font-bold"
-  >
+  <nav aria-label="Main navigation" class="hidden md:flex md text-fluid-sm font-bold">
     <ul class="flex items-center gap-6">
       <li v-for="link in links" :key="link.label">
         <a
