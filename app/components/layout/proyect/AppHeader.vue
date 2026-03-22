@@ -19,9 +19,6 @@
         </div>
         <span class="tracking-tighter hidden sm:flex">{{ navigation.logo.title }}</span>
       </a>
-
-      <LayoutProyectAppNav />
-
       <div class="flex items-center gap-4">
         <NuxtLink
           href="/"
