@@ -15,7 +15,7 @@
             aria-hidden="true"
             focusable="false"
           >
-            <use :href="usePublicAsset('/icons/skills.svg') + '#' + social.icon" />
+            <use :href="usePublicAsset('/sprite.svg') + '#' + social.icon" />
           </svg>
         </a>
       </li>
