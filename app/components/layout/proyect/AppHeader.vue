@@ -20,15 +20,15 @@
         <span class="tracking-tighter hidden sm:flex">{{ navigation.logo.title }}</span>
       </a>
 
-      <LayoutAppNav />
+      <LayoutProyectAppNav />
 
       <div class="flex items-center gap-4">
-        <button
-          :href="navigation.cta.href"
+        <NuxtLink
+          href="/"
           class="px-4 py-1.5 rounded-lg border-2 border-accent text-primary text-fluid-sm text-accent font-bold hover:bg-accent hover:text-text-primary hover:border-accent transition-all"
         >
-          {{ navigation.cta.label }}
-        </button>
+          Home
+        </NuxtLink>
       </div>
     </div>
   </header>

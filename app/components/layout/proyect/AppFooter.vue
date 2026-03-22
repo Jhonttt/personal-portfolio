@@ -25,7 +25,7 @@
       </a>
 
       <div class="flex md:absolute md:left-1/2 md:-translate-x-1/2">
-        <LayoutAppSocial />
+        <LayoutProyectAppSocial />
       </div>
 
       <p class="text-fluid-md lg:text-fluid-sm md:text-fluid-xs md:ml-auto shrink-0">

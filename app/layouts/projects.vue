@@ -1,9 +1,9 @@
 <template>
   <div class="font-inter min-h-screen flex flex-col overflow-hidden">
-    <LayoutDefaultAppHeader />
+    <LayoutProyectAppHeader />
     <main class="flex-1" aria-label="Portfolio of Juan Atahona">
       <slot />
     </main>
-    <LayoutDefaultAppFooter />
+    <LayoutProyectAppFooter />
   </div>
 </template>

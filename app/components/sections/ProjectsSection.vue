@@ -24,7 +24,7 @@
         >
           {{ projects.description }}
         </p>
-        <a
+        <NuxtLink
           :href="projects.cta.href"
           class="flex items-center gap-1 transition group"
           aria-label="See all the projects"
@@ -33,7 +33,7 @@
           <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
             >arrow_forward</span
           >
-        </a>
+        </NuxtLink>
       </div>
     </div>
 
