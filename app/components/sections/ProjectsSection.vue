@@ -26,11 +26,11 @@
         </p>
         <NuxtLink
           :href="projects.cta.href"
-          class="flex items-center gap-1 transition group"
+          class="flex items-center gap-2 text-text-muted hover:text-accent transition-colors w-fit group"
           aria-label="See all the projects"
         >
           <span class="md:text-fluid-sm text-fluid-md font-bold">{{ projects.cta.label }}</span>
-          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+          <span class="material-symbols-outlined group-hover:translate-x-0.5 transition-transform"
             >arrow_forward</span
           >
         </NuxtLink>

@@ -9,7 +9,7 @@
       "alt": "Hero visual"
     },
     "cta": {
-      "primary": { "label": "View My Work", "href": "#projects" },
+      "primary": { "label": "View My Work", "href": "/projects" },
       "secondary": { "label": "Download CV", "href": "#" }
     },
     "badge": {

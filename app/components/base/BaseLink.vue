@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <a
+  <NuxtLink
     :href="props.link"
     :class="[
       'border-2 rounded-lg text-fluid-lg md:text-fluid-sm lg:text-fluid-md font-bold transition shadow-md',
@@ -16,5 +16,5 @@
     ]"
   >
     <slot>Learn more</slot>
-  </a>
+  </NuxtLink>
 </template>

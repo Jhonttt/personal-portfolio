@@ -15,9 +15,33 @@
       "id": "project-hub",
       "title": "Project Hub",
       "description": "A web for a high school to upload their students jobs.",
-      "image": "/images/projects/notes.webp",
+      "image": "/images/projects/intermodular.webp",
       "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
+      "url": "https://github.com/Jhonttt/proyecto-intermodular"
+    },
+    {
+      "id": "notas-app",
+      "title": "NotasApp",
+      "description": "A vanilla JS task manager with localStorage persistence, snapshot history, inter-window communication and i18n support.",
+      "image": "/images/projects/notes.webp",
+      "tags": ["JavaScript", "HTML", "CSS"],
       "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
+    },
+    {
+      "id": "localhub",
+      "title": "LocalHub",
+      "description": "A responsive landing page connecting users with local services, built with CSS Grid, Flexbox, Sass, dark/light theming and WCAG AA accessibility.",
+      "image": "/images/projects/localhub.webp",
+      "tags": ["HTML", "CSS", "Sass"],
+      "url": "https://github.com/Jhonttt/diw-u2-localhub-atahona-toro"
+    },
+    {
+      "id": "presupuestador-copisteria",
+      "title": "Print Shop Estimator",
+      "description": "A vanilla JS budget calculator for print shop services, handling B&W/color pages, duplex, binding, volume discounts and urgency surcharges with integer-based arithmetic to avoid floating-point errors.",
+      "image": "/images/projects/presupuestador.webp",
+      "tags": ["JavaScript", "HTML", "CSS"],
+      "url": "https://github.com/Jhonttt/presupuestador-de-copisteria"
     }
   ]
 }

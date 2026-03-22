@@ -17,16 +17,8 @@
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
           <span class="material-symbols-outlined">code</span>
         </div>
-        <span class="tracking-tighter hidden sm:flex">{{ navigation.logo.title }}</span>
+        <span class="tracking-tighter">{{ navigation.logo.title }}</span>
       </a>
-      <div class="flex items-center gap-4">
-        <NuxtLink
-          href="/"
-          class="px-4 py-1.5 rounded-lg border-2 border-accent text-primary text-fluid-sm text-accent font-bold hover:bg-accent hover:text-text-primary hover:border-accent transition-all"
-        >
-          Home
-        </NuxtLink>
-      </div>
     </div>
   </header>
 </template>
