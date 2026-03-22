@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
+  import { usePublicAsset } from '~/composables/usePublicAsset'
 
   const socials = usePortfolioStore().footer.socials
 </script>
@@ -14,7 +15,7 @@
             aria-hidden="true"
             focusable="false"
           >
-            <use :href="'/sprite.svg#' + social.icon" />
+            <use :href="usePublicAsset('/icons/skills.svg') + '#' + social.icon" />
           </svg>
         </a>
       </li>
