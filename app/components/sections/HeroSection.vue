@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
+  import { usePublicAsset } from '~/composables/usePublicAsset'
 
   const hero = usePortfolioStore().hero
 </script>
@@ -34,7 +35,7 @@
         </div>
         <div class="relative">
           <img
-            :src="hero.image.src"
+            :src="usePublicAsset(hero.image.src)"
             :alt="hero.image.alt"
             class="md:w-110 w-full md:h-110 h-full mt-10 rounded-2xl object-cover"
             width="440"
