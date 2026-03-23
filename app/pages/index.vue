@@ -13,9 +13,12 @@
   })
 
   const store = usePortfolioStore()
-  if (!store.isLoaded) {
-    store.init()
-  }
+  await useAsyncData('portfolio', async () => {
+    if (!store.isLoaded) {
+      store.init()
+    }
+    return true
+  })
 </script>
 
 <template>
@@ -36,9 +39,9 @@
     </template>
 
     <SectionsHeroSection />
-    <SectionsAboutSection />
-    <SectionsSkillsSection />
-    <SectionsProjectsSection />
-    <SectionsContactSection />
+    <LazySectionsAboutSection />
+    <LazySectionsSkillsSection />
+    <LazySectionsProjectsSection />
+    <LazySectionsContactSection />
   </NuxtErrorBoundary>
 </template>

@@ -2,6 +2,9 @@
   import { usePortfolioStore } from '#imports'
   import { usePublicAsset } from '~/composables/usePublicAsset'
 
+  useHead({
+    link: [{ rel: 'preload', as: 'image', href: '/images/hero.webp', fetchpriority: 'high' }],
+  })
   const hero = usePortfolioStore().hero
 </script>
 

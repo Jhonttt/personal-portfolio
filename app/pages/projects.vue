@@ -104,7 +104,7 @@
         </div>
       </div>
 
-      <div
+      <ul
         v-if="filteredProjects?.length"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-none p-0"
         aria-label="List of projects"
@@ -112,7 +112,7 @@
         <li v-for="project in filteredProjects" :key="project.id">
           <BaseProject v-bind="project" />
         </li>
-      </div>
+      </ul>
       <div
         v-else-if="searchQuery"
         class="flex flex-col items-center justify-center min-h-100 gap-4 text-center"

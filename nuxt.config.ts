@@ -43,5 +43,11 @@ export default defineNuxtConfig({
     families: {
       'Public+Sans': [300, 400, 500, 600, 700, 800, 900],
     },
+    display: 'swap',
+    preload: true,
+  },
+
+  nitro: {
+    compressPublicAssets: true,
   },
 })
