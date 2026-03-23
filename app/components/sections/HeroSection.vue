@@ -25,12 +25,13 @@
             >
               {{ hero.cta.primary.label }}
             </BaseLink>
-            <BaseLink
-              :link="hero.cta.secondary.href"
-              class="bg-transparent text-text-primary border-dark-border hover:border-text-primary px-5 py-3"
+            <a
+              :href="hero.cta.secondary.href"
+              class="border-2 rounded-lg text-fluid-lg md:text-fluid-sm lg:text-fluid-md font-bold transition shadow-md bg-transparent text-text-primary border-dark-border hover:border-text-primary px-5 py-3"
+              download="curriculum-vitae.webp"
             >
               {{ hero.cta.secondary.label }}
-            </BaseLink>
+            </a>
           </div>
         </div>
         <div class="relative">
