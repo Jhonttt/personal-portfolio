@@ -9,14 +9,14 @@
       "description": "A web portal for students with emotional problems",
       "image": "/images/projects/serena-project.webp",
       "tags": ["Node.js", "React", "Tailwindcss"],
-      "url": "http://proyectoserena.vercel.app"
+      "url": "https://proyectoserena.vercel.app"
     },
     {
       "id": "project-hub",
       "title": "Project Hub",
-      "description": "A web for a high school to upload their students jobs.",
+      "description": "A website for a high school to showcase its students' work.",
       "image": "/images/projects/intermodular.webp",
-      "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
+      "tags": ["Laravel", "Angular", "Bootstrap", "Blade"],
       "url": "https://github.com/Jhonttt/proyecto-intermodular"
     },
     {

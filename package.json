@@ -2,6 +2,9 @@
   "name": "personal-portfolio",
   "type": "module",
   "private": true,
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,6 +13,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "typecheck": "nuxt typecheck",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"

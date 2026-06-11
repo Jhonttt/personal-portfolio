@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
   const contact = usePortfolioStore().contact
+  const mailtoHref = `mailto:${contact.email}?subject=${encodeURIComponent("Let's talk")}`
 </script>
 <template>
   <section
@@ -18,9 +19,8 @@
         {{ contact.description }}
       </p>
       <a
-        :href="`https://mail.google.com/mail/?view=cm&to=${contact.email}&su=Let's talk`"
-        target="_blank"
-        class="group relative mt-2 inline-flex items-center gap-3 px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent md:text-fluid-md text-fluid-lg"
+        :href="mailtoHref"
+        class="group relative mt-2 inline-flex max-w-full items-center gap-3 px-5 sm:px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent text-fluid-base sm:text-fluid-lg md:text-fluid-md"
         :aria-label="`Send email to ${contact.email}`"
       >
         <span

@@ -2,10 +2,12 @@
   import { usePortfolioStore } from '#imports'
   import { usePublicAsset } from '~/composables/usePublicAsset'
 
-  useHead({
-    link: [{ rel: 'preload', as: 'image', href: '/images/hero.webp', fetchpriority: 'high' }],
-  })
   const hero = usePortfolioStore().hero
+  const heroImage = usePublicAsset(hero.image.src)
+
+  useHead({
+    link: [{ rel: 'preload', as: 'image', href: heroImage, fetchpriority: 'high' }],
+  })
 </script>
 
 <template>
@@ -29,7 +31,7 @@
               {{ hero.cta.primary.label }}
             </BaseLink>
             <a
-              :href="hero.cta.secondary.href"
+              :href="usePublicAsset(hero.cta.secondary.href)"
               class="border-2 rounded-lg text-fluid-lg md:text-fluid-sm lg:text-fluid-md font-bold transition shadow-md bg-transparent text-text-primary border-dark-border hover:border-text-primary px-5 py-3"
               download="curriculum-vitae.webp"
             >
@@ -39,20 +41,23 @@
         </div>
         <div class="relative">
           <img
-            :src="usePublicAsset(hero.image.src)"
+            :src="heroImage"
             :alt="hero.image.alt"
             class="md:w-110 w-full md:h-110 h-full mt-10 rounded-2xl object-cover"
             width="440"
             height="440"
             fetchpriority="high"
+            decoding="async"
           />
 
           <div
             class="absolute -bottom-6 -left-6 text-text-primary px-4 py-2 rounded-md shadow-lg bg-dark-primary border border-dark-border flex flex-col items-start gap-1"
             aria-hidden="true"
           >
-            <span class="text-text-muted text-fluid-xs uppercase font-bold">Trusted by</span>
-            <p class="font-bold text-fluid-xs text-text-primary">25+ Global Clients</p>
+            <span class="text-text-muted text-fluid-xs uppercase font-bold">{{
+              hero.badge.label
+            }}</span>
+            <p class="font-bold text-fluid-xs text-text-primary">{{ hero.badge.value }}</p>
           </div>
         </div>
       </div>

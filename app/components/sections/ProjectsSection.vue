@@ -30,9 +30,7 @@
           aria-label="See all the projects"
         >
           <span class="md:text-fluid-sm text-fluid-md font-bold">{{ projects.cta.label }}</span>
-          <span class="material-symbols-outlined group-hover:translate-x-0.5 transition-transform"
-            >arrow_forward</span
-          >
+          <BaseIcon name="arrow_forward" class="group-hover:translate-x-0.5 transition-transform" />
         </NuxtLink>
       </div>
     </div>
@@ -47,6 +45,6 @@
         <BaseProject v-bind="project" />
       </li>
     </ul>
-    <p v-else class="text-center text-fluid-2xl mt-3" role="status">There aren't projects</p>
+    <p v-else class="text-center text-fluid-2xl mt-3" role="status">No projects to show yet.</p>
   </section>
 </template>

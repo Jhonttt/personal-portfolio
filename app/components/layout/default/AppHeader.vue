@@ -5,7 +5,9 @@
 </script>
 
 <template>
-  <header class="border-b border-dark-border md:px-10">
+  <header
+    class="sticky top-0 z-40 border-b border-dark-border bg-dark-primary/85 backdrop-blur-md md:px-10"
+  >
     <div
       class="py-4 flex items-center justify-between px-4 sm:px-6 max-w-7xl mx-auto w-full relative"
     >
@@ -15,7 +17,7 @@
         :aria-label="`${navigation.logo.title} - go home`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
-          <span class="material-symbols-outlined">code</span>
+          <BaseIcon name="code" />
         </div>
         <span class="tracking-tighter hidden sm:flex">{{ navigation.logo.title }}</span>
       </a>

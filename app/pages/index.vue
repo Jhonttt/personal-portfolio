@@ -2,22 +2,46 @@
   const config = useRuntimeConfig()
 
   useSeoMeta({
-    title: 'Juan Atahona | FullStack Developer',
+    title: 'Juan Atahona | Fullstack Developer',
     description: 'Fullstack Developer focused on visual depth and clean execution.',
-    ogTitle: 'Juan Atahona | FullStack Developer',
+    ogTitle: 'Juan Atahona | Fullstack Developer',
     ogDescription: 'Fullstack Developer focused on visual depth and clean execution.',
     ogImage: `${config.public.siteUrl}/og-image.webp`,
+    ogImageAlt: 'Preview of the portfolio of Juan Atahona, Fullstack Developer',
     ogUrl: config.public.siteUrl,
     ogType: 'website',
+    ogSiteName: 'Juan Atahona | Fullstack Developer',
     twitterCard: 'summary_large_image',
+    twitterImage: `${config.public.siteUrl}/og-image.webp`,
   })
 
   const store = usePortfolioStore()
-  await useAsyncData('portfolio', async () => {
-    if (!store.isLoaded) {
-      store.init()
-    }
-    return true
+
+  useHead({
+    link: [{ rel: 'canonical', href: config.public.siteUrl }],
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'Person',
+              name: 'Juan Atahona',
+              jobTitle: 'Fullstack Developer',
+              url: config.public.siteUrl,
+              email: `mailto:${store.contact.email}`,
+              sameAs: store.footer.socials.map((social) => social.href),
+            },
+            {
+              '@type': 'WebSite',
+              name: 'Juan Atahona | Fullstack Developer',
+              url: config.public.siteUrl,
+            },
+          ],
+        }),
+      },
+    ],
   })
 </script>
 

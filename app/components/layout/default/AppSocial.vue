@@ -3,10 +3,11 @@
   import { usePublicAsset } from '~/composables/usePublicAsset'
 
   const socials = usePortfolioStore().footer.socials
+  const spriteUrl = usePublicAsset('/sprite.svg')
 </script>
 
 <template>
-  <div>
+  <nav aria-label="Social media">
     <ul class="flex items-center gap-6">
       <li v-for="social in socials" :key="social.label">
         <a :href="social.href" :aria-label="social.label" target="_blank" rel="noopener noreferrer">
@@ -15,10 +16,10 @@
             aria-hidden="true"
             focusable="false"
           >
-            <use :href="usePublicAsset('/sprite.svg') + '#' + social.icon" />
+            <use :href="`${spriteUrl}#${social.icon}`" />
           </svg>
         </a>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>

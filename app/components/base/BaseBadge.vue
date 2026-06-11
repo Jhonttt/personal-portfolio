@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <ul class="flex items-center gap-1" aria-label="Labels">
+  <ul class="flex items-center gap-1" aria-label="Technologies used">
     <li
       v-for="(label, index) in props.labels"
       :key="label"

@@ -18,8 +18,8 @@
           <p class="text-text-muted text-pretty font-bold text-fluid-lg md:text-fluid-md">
             {{ about.description }}
           </p>
-          <div class="flex items-center gap-1 text-accent font-bold">
-            <span class="material-symbols-outlined">verified</span>
+          <div class="flex items-center gap-2 text-accent font-bold">
+            <BaseIcon name="verified" />
             <span class="text-fluid-md md:text-fluid-sm">{{ about.badge }}</span>
           </div>
         </div>

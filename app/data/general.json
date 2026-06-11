@@ -6,7 +6,7 @@
     "description": "Fullstack Developer focused on visual depth and clean execution. Building high-performance applications with modern architecture.",
     "image": {
       "src": "/images/hero.webp",
-      "alt": "Hero visual"
+      "alt": "Portrait of Juan Atahona, Fullstack Developer"
     },
     "cta": {
       "primary": { "label": "View My Work", "href": "/projects" },
@@ -29,7 +29,7 @@
     ]
   },
   "contact": {
-    "title": "¿Got a project in mind?",
+    "title": "Got a project in mind?",
     "description": "Let's build something great together",
     "email": "juanatahonadev@gmail.com"
   },

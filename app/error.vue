@@ -10,20 +10,20 @@
 
 <template>
   <main class="error-page min-h-screen flex flex-col items-center justify-center gap-3 text-center">
-    <template v-if="error.status === 404">
+    <template v-if="error.statusCode === 404">
       <div role="alert">
         <h1 aria-label="Error 404: Page not found">
-          <span aria-hidden="true" class="text-fluid-xl text-accent">{{ error.status }}</span> Page
-          not found
+          <span aria-hidden="true" class="text-fluid-xl text-accent">{{ error.statusCode }}</span>
+          Page not found
         </h1>
         <p>The page you are looking for does not exist.</p>
       </div>
     </template>
 
-    <template v-else-if="(error.status ?? 0) >= 500">
+    <template v-else-if="(error.statusCode ?? 0) >= 500">
       <div role="alert">
-        <h1 :aria-label="`Error ${error.status}: Server Error`">
-          <span aria-hidden="true" class="text-fluid-xl text-accent">{{ error.status }}</span>
+        <h1 :aria-label="`Error ${error.statusCode}: Server Error`">
+          <span aria-hidden="true" class="text-fluid-xl text-accent">{{ error.statusCode }}</span>
           Server error
         </h1>
         <p>Something went wrong. Please try again later.</p>
@@ -32,8 +32,9 @@
 
     <template v-else>
       <div role="alert">
-        <h1 :aria-label="`Error ${error.status}`">
-          <span aria-hidden="true" class="text-fluid-xl text-accent">{{ error.status }}</span> Error
+        <h1 :aria-label="`Error ${error.statusCode}`">
+          <span aria-hidden="true" class="text-fluid-xl text-accent">{{ error.statusCode }}</span>
+          Error
         </h1>
         <p>{{ error.message }}</p>
       </div>

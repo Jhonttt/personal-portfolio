@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
-  import TechGroup from '../base/TechGroup.vue'
   const skills = usePortfolioStore().skills
 </script>
 
@@ -25,7 +24,7 @@
       aria-label="List of techs"
     >
       <li v-for="category in skills.categories" :key="category.id">
-        <TechGroup v-bind="category" />
+        <BaseTechGroup v-bind="category" />
       </li>
     </ul>
   </section>

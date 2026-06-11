@@ -84,6 +84,7 @@ npm run build
 | `npm run build`        | 🏗️ Build con SSR (VPS, DokPloy)                                       |
 | `npm run preview`      | 👁️ Preview del build en local                                         |
 | `npm run lint`         | ✅ Ejecutar ESLint                                                    |
+| `npm run typecheck`    | 🔍 Verificar tipos con TypeScript (vue-tsc)                           |
 | `npm run lint:fix`     | 🔧 Corregir errores de ESLint automáticamente                         |
 | `npm run format`       | 🎨 Formatear código con Prettier                                      |
 | `npm run format:check` | 🔍 Verificar formato sin modificar                                    |
@@ -133,7 +134,7 @@ personal-portfolio/
 El portfolio sigue una arquitectura de **sitio estático generado** (`nuxt generate`):
 
 - **Datos** centralizados en JSONs bajo `app/data/`, consumidos por `usePortfolioStore`
-- **Store** único que inicializa y expone todos los datos con manejo de errores
+- **Store** único de solo lectura que expone todos los datos del portfolio
 - **Componentes** en tres capas — `base/` (primitivos) → `layout/` (estructura) → `sections/` (contenido)
 - **Assets públicos** siempre referenciados via `usePublicAsset()` para compatibilidad entre entornos
 
@@ -168,7 +169,7 @@ git push → main
         └── 🐳 DokPloy CubePath  (via Webhook)
 ```
 
-_✨ Uso de **Husky + commitlint** para validates de commits_
+_✨ Uso de **Husky + commitlint** para la validación de commits_
 
 ---
 

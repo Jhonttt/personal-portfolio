@@ -11,6 +11,7 @@
   }
 
   const props = defineProps<Props>()
+  const spriteUrl = usePublicAsset('/icons/skills.svg')
 </script>
 
 <template>
@@ -28,7 +29,7 @@
           aria-hidden="true"
           focusable="false"
         >
-          <use :href="usePublicAsset('/icons/skills.svg') + '#' + props.icon" />
+          <use :href="`${spriteUrl}#${props.icon}`" />
         </svg>
       </div>
       <h3 :id="props.id" class="xl:text-fluid-xl lg:text-fluid-lg font-bold text-fluid-xl">
@@ -49,7 +50,7 @@
             aria-hidden="true"
             focusable="false"
           >
-            <use :href="usePublicAsset('/icons/skills.svg') + '#' + tech.icon" />
+            <use :href="`${spriteUrl}#${tech.icon}`" />
           </svg>
         </div>
         <span class="text-fluid-xs font-bold uppercase tracking-wider text-text-muted">{{
