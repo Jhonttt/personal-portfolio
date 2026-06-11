@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
-  const projects = usePortfolioStore().projects
 
-  const size = projects.items.length >= 2 ? 2 : projects.items.length
+  const projects = usePortfolioStore().projects
+  const featuredProjects = projects.items.slice(0, 2)
 </script>
 
 <template>
@@ -11,13 +11,12 @@
     aria-labelledby="projects-heading"
     class="py-20 px-6 max-w-6xl mx-auto w-full md:px-10 pt-0 lg:pt-20"
   >
-    <div class="flex flex-col gap-2">
-      <h2
-        id="projects-heading"
-        class="md:text-fluid-2xl text-fluid-3xl font-black text-right md:text-left"
-      >
-        {{ projects.title }}
-      </h2>
+    <div class="reveal flex flex-col gap-2">
+      <BaseHeading
+        heading-id="projects-heading"
+        :title="projects.title"
+        class="md:text-fluid-2xl text-fluid-3xl text-right md:text-left"
+      />
       <div class="flex justify-between flex-col md:flex-row items-end md:gap-0 gap-3">
         <p
           class="text-text-muted text-pretty font-bold leading-relaxed md:text-fluid-md text-fluid-lg"
@@ -36,12 +35,12 @@
     </div>
 
     <ul
-      v-if="projects.items?.length"
+      v-if="featuredProjects.length"
       class="grid grid-cols-1 gap-6 mt-5 md:mt-10 list-none p-0"
-      :class="size >= 2 ? 'md:grid-cols-2' : 'md:grid-cols-1'"
+      :class="featuredProjects.length >= 2 ? 'md:grid-cols-2' : 'md:grid-cols-1'"
       aria-label="List of projects"
     >
-      <li v-for="project in projects.items.slice(0, size)" :key="project.id">
+      <li v-for="project in featuredProjects" :key="project.id" class="reveal">
         <BaseProject v-bind="project" />
       </li>
     </ul>

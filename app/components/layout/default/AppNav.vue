@@ -2,9 +2,9 @@
   import { usePortfolioStore } from '#imports'
 
   const links = usePortfolioStore().navigation.links
-  const isOpen = ref(false)
-  const menuButton = ref<HTMLButtonElement | null>(null)
-  const activeHash = ref('')
+  const isOpen = shallowRef(false)
+  const activeHash = shallowRef('')
+  const menuButton = useTemplateRef<HTMLButtonElement>('menuButton')
 
   function onKeydown(event: KeyboardEvent) {
     if (event.key === 'Escape' && isOpen.value) {
@@ -46,8 +46,10 @@
         <a
           :href="link.href"
           :aria-current="activeHash === link.href ? 'location' : undefined"
-          :class="activeHash === link.href ? 'text-accent' : 'text-text-muted'"
-          class="transition-colors hover:text-accent"
+          class="relative py-1 transition-colors hover:text-text-primary after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:rounded-full after:bg-accent after:transition-transform after:duration-300 hover:after:scale-x-100"
+          :class="
+            activeHash === link.href ? 'text-text-primary after:scale-x-100' : 'text-text-muted'
+          "
           >{{ link.label }}</a
         >
       </li>

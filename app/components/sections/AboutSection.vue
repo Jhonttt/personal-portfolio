@@ -10,11 +10,13 @@
     class="py-20 bg-dark-secondary border-y border-dark-border md:px-10"
   >
     <div class="px-6 max-w-6xl mx-auto w-full">
-      <div class="grid grid-cols-1 lg:grid-cols-2 items-start gap-6 md:gap-8 lg:gap-10">
+      <div class="reveal grid grid-cols-1 lg:grid-cols-2 items-start gap-6 md:gap-8 lg:gap-10">
         <div class="flex flex-col gap-4">
-          <h2 id="about-heading" class="md:text-fluid-2xl font-black text-fluid-3xl">
-            {{ about.title }}
-          </h2>
+          <BaseHeading
+            heading-id="about-heading"
+            :title="about.title"
+            class="md:text-fluid-2xl text-fluid-3xl"
+          />
           <p class="text-text-muted text-pretty font-bold text-fluid-lg md:text-fluid-md">
             {{ about.description }}
           </p>

@@ -15,7 +15,7 @@
 
 <template>
   <a
-    class="flex flex-col mt-5 group"
+    class="flex flex-col mt-5 group transition-transform duration-300 hover:-translate-y-1"
     :aria-labelledby="`project-${props.id}`"
     :aria-describedby="`project-desc-${props.id}`"
     :href="url"
@@ -26,7 +26,7 @@
       <img
         :src="usePublicAsset(props.image)"
         :alt="`Screenshot of the ${props.title} project`"
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        class="w-full h-full object-cover group-hover:scale-105 group-hover:brightness-105 transition duration-500"
         width="800"
         height="600"
         loading="lazy"

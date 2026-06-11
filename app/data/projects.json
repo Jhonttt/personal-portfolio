@@ -1,5 +1,6 @@
 {
   "title": "Featured Projects",
+  "pageTitle": "All Projects",
   "description": "Recent work from my development lab.",
   "cta": { "label": "View All Projects", "href": "/projects" },
   "items": [

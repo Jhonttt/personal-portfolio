@@ -25,7 +25,7 @@
 
   const store = usePortfolioStore()
 
-  const searchQuery = ref('')
+  const searchQuery = shallowRef('')
 
   const allProjects = computed(() => store.projects.items)
 
@@ -67,9 +67,11 @@
       <div class="flex flex-col gap-6 mb-10">
         <div class="flex flex-col md:flex-row justify-between items-end gap-4">
           <div class="flex flex-col gap-2">
-            <h1 class="md:text-fluid-2xl text-fluid-3xl font-black text-right md:text-left">
-              {{ store.projects.title }}
-            </h1>
+            <BaseHeading
+              tag="h1"
+              :title="store.projects.pageTitle"
+              class="md:text-fluid-2xl text-fluid-3xl text-right md:text-left"
+            />
             <p
               class="text-text-muted text-pretty font-bold leading-relaxed md:text-fluid-md text-fluid-lg"
             >
@@ -111,7 +113,7 @@
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-none p-0"
         aria-label="List of projects"
       >
-        <li v-for="project in filteredProjects" :key="project.id">
+        <li v-for="project in filteredProjects" :key="project.id" class="reveal">
           <BaseProject v-bind="project" />
         </li>
       </ul>

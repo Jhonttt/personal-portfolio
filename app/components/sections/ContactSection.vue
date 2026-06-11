@@ -9,10 +9,12 @@
     aria-labelledby="contact-heading"
     class="py-20 bg-dark-secondary border-y border-dark-border text-center md:px-10"
   >
-    <div class="px-6 max-w-2xl mx-auto w-full flex flex-col items-center gap-3">
-      <h2 id="contact-heading" class="md:text-fluid-2xl font-black text-fluid-3xl">
-        {{ contact.title }}
-      </h2>
+    <div class="reveal px-6 max-w-2xl mx-auto w-full flex flex-col items-center gap-3">
+      <BaseHeading
+        heading-id="contact-heading"
+        :title="contact.title"
+        class="md:text-fluid-2xl text-fluid-3xl"
+      />
       <p
         class="text-text-muted text-pretty font-bold leading-relaxed md:text-fluid-md text-fluid-lg"
       >
@@ -20,7 +22,7 @@
       </p>
       <a
         :href="mailtoHref"
-        class="group relative mt-2 inline-flex max-w-full items-center gap-3 px-5 sm:px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent text-fluid-base sm:text-fluid-lg md:text-fluid-md"
+        class="group relative mt-2 inline-flex max-w-full items-center gap-3 px-5 sm:px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:-translate-y-0.5 hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent text-fluid-base sm:text-fluid-lg md:text-fluid-md"
         :aria-label="`Send email to ${contact.email}`"
       >
         <span
