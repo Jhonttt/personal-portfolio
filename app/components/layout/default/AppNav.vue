@@ -40,7 +40,10 @@
 </script>
 
 <template>
-  <nav aria-label="Main navigation" class="text-fluid-sm font-bold">
+  <nav
+    aria-label="Main navigation"
+    class="font-mono font-semibold uppercase tracking-wider text-fluid-sm md:text-fluid-xs"
+  >
     <ul class="hidden md:flex items-center gap-6">
       <li v-for="link in links" :key="link.label">
         <a
@@ -76,7 +79,7 @@
       <ul
         v-show="isOpen"
         id="mobile-menu"
-        class="md:hidden absolute left-0 right-0 top-full z-50 flex flex-col bg-dark-secondary border-b border-dark-border px-6 py-4 shadow-lg"
+        class="md:hidden absolute left-0 right-0 top-full z-50 flex flex-col bg-dark-secondary bg-linear-to-b from-white/4 to-transparent border-b border-white/10 px-6 py-4 shadow-lg"
       >
         <li v-for="link in links" :key="link.label">
           <a

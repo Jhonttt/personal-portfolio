@@ -38,7 +38,7 @@
         <BaseBadge :labels="props.tags" />
         <h3
           :id="`project-${props.id}`"
-          class="md:text-fluid-xl font-bold tracking-tighter text-fluid-2xl"
+          class="md:text-fluid-xl font-display font-extrabold tracking-tight text-fluid-2xl"
         >
           {{ props.title }}
           <span class="sr-only">(opens in new tab)</span>

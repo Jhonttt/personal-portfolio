@@ -13,13 +13,15 @@
     >
       <NuxtLink
         href="/"
-        class="uppercase font-black flex items-center gap-2 text-text-primary shrink text-fluid-lg"
+        class="flex items-center gap-2 text-text-primary shrink text-fluid-md"
         :aria-label="`${navigation.logo.title} - go home`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
           <BaseIcon name="code" />
         </div>
-        <span class="tracking-tighter">{{ navigation.logo.title }}</span>
+        <span class="font-mono font-semibold lowercase tracking-tight">{{
+          navigation.logo.title
+        }}</span>
       </NuxtLink>
     </div>
   </header>

@@ -67,6 +67,7 @@
       <div class="flex flex-col gap-6 mb-10">
         <div class="flex flex-col md:flex-row justify-between items-end gap-4">
           <div class="flex flex-col gap-2">
+            <BaseEyebrow :label="store.projects.pageEyebrow" class="text-right md:text-left" />
             <BaseHeading
               tag="h1"
               :title="store.projects.pageTitle"
@@ -92,14 +93,14 @@
               <span class="font-bold text-fluid-sm">Back</span>
             </NuxtLink>
             <label
-              class="relative flex items-center bg-dark-raised rounded-full border-3 border-dark-border transition-all duration-200 focus-within:border-accent shrink-0"
+              class="relative flex items-center bg-dark-raised rounded-full border-2 border-white/10 transition-all duration-200 focus-within:border-accent shrink-0"
             >
               <span class="sr-only">Search projects</span>
               <input
                 v-model="searchQuery"
                 type="search"
                 placeholder="Search projects..."
-                class="w-40 sm:w-64 bg-transparent px-4 py-2.5 text-text-primary placeholder:text-text-muted border-none outline-none ring-0 focus:ring-0 transition-colors"
+                class="w-40 sm:w-64 bg-transparent px-4 py-2.5 font-mono text-fluid-sm text-text-primary placeholder:text-text-muted border-none outline-none ring-0 focus:ring-0 transition-colors"
               />
               <BaseIcon name="search" class="size-5 text-text-muted mr-3 ml-1" />
             </label>
@@ -121,16 +122,22 @@
         v-else-if="searchQuery"
         class="flex flex-col items-center justify-center min-h-100 gap-4 text-center"
       >
-        <p class="text-fluid-2xl font-bold text-text-primary">No projects found matching</p>
-        <p class="text-fluid-lg text-text-muted font-semibold bg-dark-raised px-4 py-2 rounded-md">
+        <p class="text-fluid-2xl font-display font-extrabold tracking-tight text-text-primary">
+          No projects found matching
+        </p>
+        <p
+          class="font-mono text-fluid-md text-text-muted font-semibold bg-dark-raised border border-white/10 px-4 py-2 rounded-md"
+        >
           "{{ searchQuery }}"
         </p>
       </div>
       <div v-else class="flex flex-col items-center justify-center min-h-100 gap-4 text-center">
-        <div class="p-4 bg-dark-raised rounded-full border border-dark-border">
+        <div class="p-4 bg-dark-raised rounded-full border border-white/10">
           <BaseIcon name="folder_open" class="size-12 text-text-muted" />
         </div>
-        <p class="text-fluid-2xl font-bold text-text-primary">No projects to show yet.</p>
+        <p class="text-fluid-2xl font-display font-extrabold tracking-tight text-text-primary">
+          No projects to show yet.
+        </p>
       </div>
     </div>
   </NuxtErrorBoundary>

@@ -19,6 +19,7 @@
     }
   },
   "about": {
+    "eyebrow": "about",
     "title": "About Me",
     "description": "I am a dedicated Fullstack Developer specializing in building robust and scalable digital products. With more than 2 years of experience, I bridge the gap between complex backend logic and intuitive frontend experiences.",
     "badge": "Certified AWS Developer",
@@ -30,6 +31,7 @@
     ]
   },
   "contact": {
+    "eyebrow": "contact",
     "title": "Got a project in mind?",
     "description": "Let's build something great together",
     "email": "juanatahonadev@gmail.com"

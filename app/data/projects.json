@@ -1,5 +1,7 @@
 {
+  "eyebrow": "work",
   "title": "Featured Projects",
+  "pageEyebrow": "archive",
   "pageTitle": "All Projects",
   "description": "Recent work from my development lab.",
   "cta": { "label": "View All Projects", "href": "/projects" },

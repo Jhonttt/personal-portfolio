@@ -51,8 +51,11 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      'Public+Sans': [400, 600, 700, 900],
+      'Public+Sans': [400, 600, 700],
+      'Bricolage+Grotesque': [800],
+      'JetBrains+Mono': [400, 600],
     },
+    subsets: ['latin'],
     display: 'swap',
     preload: true,
   },

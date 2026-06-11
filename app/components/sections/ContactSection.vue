@@ -10,6 +10,7 @@
     class="py-20 bg-dark-secondary border-y border-dark-border text-center md:px-10"
   >
     <div class="reveal px-6 max-w-2xl mx-auto w-full flex flex-col items-center gap-3">
+      <BaseEyebrow :label="contact.eyebrow" />
       <BaseHeading
         heading-id="contact-heading"
         :title="contact.title"
@@ -22,7 +23,7 @@
       </p>
       <a
         :href="mailtoHref"
-        class="group relative mt-2 inline-flex max-w-full items-center gap-3 px-5 sm:px-8 py-4 rounded-full border border-dark-border bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:-translate-y-0.5 hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent text-fluid-base sm:text-fluid-lg md:text-fluid-md"
+        class="group relative mt-2 inline-flex max-w-full items-center gap-3 px-5 sm:px-8 py-4 rounded-full border border-white/10 bg-transparent overflow-hidden transition-all duration-300 hover:border-accent hover:-translate-y-0.5 hover:shadow-[0_0_24px_-4px_--theme(--color-accent/40%)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent text-fluid-base sm:text-fluid-lg md:text-fluid-md"
         :aria-label="`Send email to ${contact.email}`"
       >
         <span
@@ -31,7 +32,7 @@
         />
 
         <span
-          class="relative text-text-muted group-hover:text-text-primary font-semibold tracking-wide transition-colors duration-300"
+          class="relative font-mono text-text-muted group-hover:text-text-primary font-semibold tracking-tight transition-colors duration-300"
         >
           {{ contact.email }}
         </span>

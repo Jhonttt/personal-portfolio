@@ -10,6 +10,7 @@
     class="py-20 px-6 max-w-6xl mx-auto w-full md:px-10"
   >
     <div class="reveal flex flex-col gap-2">
+      <BaseEyebrow :label="skills.eyebrow" class="text-center" />
       <BaseHeading
         heading-id="skills-heading"
         :title="skills.title"

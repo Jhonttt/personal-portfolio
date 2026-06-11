@@ -12,6 +12,7 @@
     class="py-20 px-6 max-w-6xl mx-auto w-full md:px-10 pt-0 lg:pt-20"
   >
     <div class="reveal flex flex-col gap-2">
+      <BaseEyebrow :label="projects.eyebrow" class="text-right md:text-left" />
       <BaseHeading
         heading-id="projects-heading"
         :title="projects.title"

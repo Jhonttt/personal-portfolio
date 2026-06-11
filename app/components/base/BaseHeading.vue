@@ -23,7 +23,7 @@
 </script>
 
 <template>
-  <component :is="tag" :id="headingId" class="font-black"
+  <component :is="tag" :id="headingId" class="font-display font-extrabold tracking-tight"
     >{{ body
     }}<span class="text-accent" :aria-hidden="endsWithPunctuation ? undefined : 'true'">{{
       mark

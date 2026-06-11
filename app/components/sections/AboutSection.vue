@@ -12,6 +12,7 @@
     <div class="px-6 max-w-6xl mx-auto w-full">
       <div class="reveal grid grid-cols-1 lg:grid-cols-2 items-start gap-6 md:gap-8 lg:gap-10">
         <div class="flex flex-col gap-4">
+          <BaseEyebrow :label="about.eyebrow" />
           <BaseHeading
             heading-id="about-heading"
             :title="about.title"

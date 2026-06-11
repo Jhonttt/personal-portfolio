@@ -15,20 +15,20 @@
     >
       <NuxtLink
         href="/"
-        class="uppercase font-black flex items-center gap-2 text-text-primary shrink text-fluid-lg"
+        class="flex items-center gap-2 text-text-primary shrink text-fluid-md"
         :aria-label="`${logo.title} - go home`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
           <BaseIcon name="code" />
         </div>
-        <span class="tracking-tighter">{{ logo.title }}</span>
+        <span class="font-mono font-semibold lowercase tracking-tight">{{ logo.title }}</span>
       </NuxtLink>
 
       <div class="flex md:absolute md:left-1/2 md:-translate-x-1/2">
         <LayoutDefaultAppSocial />
       </div>
 
-      <p class="text-fluid-md lg:text-fluid-sm md:text-fluid-xs md:ml-auto shrink-0">
+      <p class="font-mono text-fluid-sm md:text-fluid-2xs md:ml-auto shrink-0">
         {{ footerCopy }}
       </p>
     </div>

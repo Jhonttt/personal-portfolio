@@ -26,7 +26,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 items-center content-center md:gap-12">
         <div class="flex flex-col gap-5">
           <p
-            class="anim-rise inline-flex w-fit items-center gap-2 rounded-full border border-dark-border bg-dark-secondary/60 px-3 py-1.5 text-fluid-xs font-bold uppercase tracking-widest text-text-muted"
+            class="anim-rise inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-dark-secondary/60 px-3 py-1.5 font-mono text-fluid-xs font-semibold lowercase tracking-wider text-text-muted"
           >
             <span class="relative flex size-2" aria-hidden="true">
               <span
@@ -39,7 +39,7 @@
 
           <h1
             id="hero-heading"
-            class="anim-rise [animation-delay:90ms] md:text-fluid-4xl font-black leading-[0.9] tracking-tight text-fluid-5xl"
+            class="anim-rise [animation-delay:90ms] md:text-fluid-4xl font-display font-extrabold leading-[0.95] tracking-tight text-fluid-5xl"
           >
             {{ hero.headline }}
             <span class="relative inline-block">
@@ -91,25 +91,40 @@
           </div>
         </div>
 
-        <div class="anim-scale [animation-delay:200ms] relative">
+        <div class="anim-scale [animation-delay:200ms] relative mt-10 md:w-fit">
           <img
             :src="heroImage"
             :alt="hero.image.alt"
-            class="md:w-110 w-full md:h-110 h-full mt-10 rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl"
+            class="md:w-110 w-full md:h-110 h-full rounded-2xl object-cover ring-1 ring-white/10 shadow-2xl"
             width="440"
             height="440"
             fetchpriority="high"
             decoding="async"
           />
 
+          <span
+            class="absolute -top-2 -left-2 size-7 rounded-tl-md border-t-2 border-l-2 border-accent"
+            aria-hidden="true"
+          />
+          <span
+            class="absolute -top-2 -right-2 size-7 rounded-tr-md border-t-2 border-r-2 border-accent"
+            aria-hidden="true"
+          />
+          <span
+            class="absolute -bottom-2 -right-2 size-7 rounded-br-md border-b-2 border-r-2 border-accent"
+            aria-hidden="true"
+          />
+
           <div
-            class="absolute -bottom-6 -left-6 text-text-primary px-4 py-2 rounded-md shadow-lg bg-dark-primary/80 backdrop-blur-sm border border-dark-border flex flex-col items-start gap-1"
+            class="absolute -bottom-6 -left-6 text-text-primary px-4 py-2 rounded-md shadow-lg bg-dark-primary/80 backdrop-blur-sm border border-white/10 flex flex-col items-start gap-1"
             aria-hidden="true"
           >
-            <span class="text-text-muted text-fluid-xs uppercase font-bold">{{
+            <span class="text-text-muted font-mono text-fluid-2xs uppercase font-semibold">{{
               hero.badge.label
             }}</span>
-            <p class="font-bold text-fluid-xs text-text-primary">{{ hero.badge.value }}</p>
+            <p class="font-mono font-semibold text-fluid-xs text-text-primary">
+              {{ hero.badge.value }}
+            </p>
           </div>
         </div>
       </div>
