@@ -4,7 +4,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
-  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/sitemap', '@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxt/eslint',
+    '@pinia/nuxt',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/i18n',
+  ],
 
   typescript: {
     strict: true,
@@ -21,7 +27,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: 'en' },
+      htmlAttrs: { lang: 'es' },
       link: [
         {
           rel: 'icon',
@@ -49,5 +55,15 @@ export default defineNuxtConfig({
 
   nitro: {
     compressPublicAssets: true,
+  },
+
+  i18n: {
+    locales: [
+      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+    ],
+    defaultLocale: 'es',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: { useCookie: true, alwaysRedirect: true },
   },
 })
