@@ -1,4 +1,7 @@
 <script setup lang="ts">
+  const { locale } = useI18n()
+  useHead(() => ({ htmlAttrs: { lang: locale.value === 'es' ? 'es-ES' : 'en-US' } }))
+
   const store = usePortfolioStore()
   store.init()
 </script>

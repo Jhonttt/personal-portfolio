@@ -2,7 +2,8 @@
   import { usePortfolioStore } from '#imports'
   import { usePublicAsset } from '~/composables/usePublicAsset'
 
-  const socials = usePortfolioStore().footer.socials
+  const { footer } = storeToRefs(usePortfolioStore())
+  const socials = computed(() => footer.value.socials)
 </script>
 
 <template>

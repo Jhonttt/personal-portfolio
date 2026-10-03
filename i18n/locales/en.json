@@ -1,1 +1,264 @@
-{}
+{
+  "general": {
+    "hero": {
+      "headline": "Turning ideas into",
+      "highlight": "scalable",
+      "headlineEnd": "products",
+      "description": "Fullstack Developer focused on visual depth and clean execution. Building high-performance applications with modern architecture.",
+      "image": {
+        "src": "/images/hero.webp",
+        "alt": "Hero visual"
+      },
+      "cta": {
+        "primary": {
+          "label": "View My Work",
+          "href": "/projects"
+        },
+        "secondary": {
+          "label": "Download CV",
+          "href": "/images/cv.webp"
+        }
+      },
+      "badge": {
+        "label": "TRUSTED BY",
+        "value": "25+ global clients"
+      }
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am a dedicated Fullstack Developer specializing in building robust and scalable digital products. With more than 2 years of experience, I bridge the gap between complex backend logic and intuitive frontend experiences.",
+      "badge": "Certified AWS Developer",
+      "metrics": [
+        {
+          "label": "EXPERIENCE",
+          "value": "+2 years"
+        },
+        {
+          "label": "PROJECTS",
+          "value": "+2"
+        },
+        {
+          "label": "SUCCESS RATE",
+          "value": "100%"
+        },
+        {
+          "label": "AVAILABILITY",
+          "value": "Remote"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Got a project in mind?",
+      "description": "Let's build something great together"
+    },
+    "footer": {
+      "copy": "© {year} JUAN.DEV · All rights reserved.",
+      "socials": [
+        {
+          "label": "X",
+          "icon": "x-twitter",
+          "href": "https://x.com"
+        },
+        {
+          "label": "LinkedIn",
+          "icon": "linkedin",
+          "href": "https://linkedin.com"
+        },
+        {
+          "label": "GitHub",
+          "icon": "github",
+          "href": "https://github.com/Jhonttt"
+        },
+        {
+          "label": "Web",
+          "icon": "globe",
+          "href": "https://proyectoserena.vercel.app"
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "logo": {
+      "icon": "",
+      "title": "Juan.dev"
+    },
+    "links": [
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Stack",
+        "href": "#stack"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "cta": {
+      "label": "Let's Talk",
+      "href": "#contact"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "Recent work from my development lab.",
+    "cta": {
+      "label": "View All Projects",
+      "href": "/projects"
+    },
+    "items": [
+      {
+        "id": "serena-project",
+        "title": "Serena Project",
+        "description": "A web portal for students with emotional problems",
+        "image": "/images/projects/serena-project.webp",
+        "tags": ["Node.js", "React", "Tailwindcss"],
+        "url": "http://proyectoserena.vercel.app"
+      },
+      {
+        "id": "project-hub",
+        "title": "Project Hub",
+        "description": "A web for a high school to upload their students jobs.",
+        "image": "/images/projects/intermodular.webp",
+        "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
+        "url": "https://github.com/Jhonttt/proyecto-intermodular"
+      },
+      {
+        "id": "notas-app",
+        "title": "NotasApp",
+        "description": "A vanilla JS task manager with localStorage persistence, snapshot history, inter-window communication and i18n support.",
+        "image": "/images/projects/notes.webp",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
+      },
+      {
+        "id": "localhub",
+        "title": "LocalHub",
+        "description": "A responsive landing page connecting users with local services, built with CSS Grid, Flexbox, Sass, dark/light theming and WCAG AA accessibility.",
+        "image": "/images/projects/localhub.webp",
+        "tags": ["HTML", "CSS", "Sass"],
+        "url": "https://github.com/Jhonttt/diw-u2-localhub-atahona-toro"
+      },
+      {
+        "id": "presupuestador-copisteria",
+        "title": "Print Shop Estimator",
+        "description": "A vanilla JS budget calculator for print shop services, handling B&W/color pages, duplex, binding, volume discounts and urgency surcharges with integer-based arithmetic to avoid floating-point errors.",
+        "image": "/images/projects/presupuestador.webp",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "url": "https://github.com/Jhonttt/presupuestador-de-copisteria"
+      }
+    ]
+  },
+  "skills": {
+    "title": "My Tech Stack",
+    "description": "The tools and technologies I use to bring ideas to life.",
+    "categories": [
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "icon": "icon-frontend",
+        "items": [
+          {
+            "name": "React",
+            "icon": "icon-react"
+          },
+          {
+            "name": "Vue",
+            "icon": "icon-vue"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "icon-typescript"
+          },
+          {
+            "name": "Tailwind",
+            "icon": "icon-tailwind"
+          }
+        ]
+      },
+      {
+        "id": "backend",
+        "label": "Backend",
+        "icon": "icon-backend",
+        "items": [
+          {
+            "name": "Node.js",
+            "icon": "icon-nodejs"
+          },
+          {
+            "name": "Laravel",
+            "icon": "icon-laravel"
+          },
+          {
+            "name": "MongoDB",
+            "icon": "icon-mongodb"
+          },
+          {
+            "name": "Java",
+            "icon": "icon-java"
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "label": "Other",
+        "icon": "icon-other",
+        "items": [
+          {
+            "name": "Vercel",
+            "icon": "icon-vercel"
+          },
+          {
+            "name": "AWS",
+            "icon": "icon-aws"
+          },
+          {
+            "name": "Git",
+            "icon": "icon-git"
+          },
+          {
+            "name": "Figma",
+            "icon": "icon-figma"
+          }
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "homeTitle": "Juan Atahona — FullStack Developer",
+    "homeDescription": "Fullstack Developer focused on visual depth and clean execution.",
+    "projectsTitle": "Projects — Juan Atahona",
+    "projectsDescription": "A collection of fullstack projects built with modern web technologies.",
+    "home": "Go home",
+    "mainNavigation": "Main navigation",
+    "portfolio": "Portfolio of Juan Atahona",
+    "metrics": "Professional metrics",
+    "allProjects": "See all the projects",
+    "projectList": "List of projects",
+    "techList": "List of technologies",
+    "noProjects": "There are no projects",
+    "back": "Back",
+    "backHome": "Back to home",
+    "searchProjects": "Search projects...",
+    "noMatches": "No projects found matching",
+    "email": "Send email to {email}",
+    "newTab": "opens in a new tab",
+    "projectScreenshot": "Screenshot of project {title}",
+    "loadingError": "Something went wrong loading the portfolio.",
+    "retry": "Try again",
+    "pageNotFound": "Page not found",
+    "pageNotFoundDescription": "The page you are looking for does not exist.",
+    "serverError": "Server error",
+    "serverErrorDescription": "Something went wrong. Please try again later.",
+    "goHome": "Go home",
+    "language": "Language",
+    "switchLanguage": "Switch language to {language}",
+    "labels": "Labels"
+  }
+}

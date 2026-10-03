@@ -1,1 +1,264 @@
-{}
+{
+  "general": {
+    "hero": {
+      "headline": "Convirtiendo ideas en",
+      "highlight": "productos",
+      "headlineEnd": "escalables",
+      "description": "Desarrollador fullstack centrado en la profundidad visual y una ejecución cuidada. Creo aplicaciones de alto rendimiento con arquitectura moderna.",
+      "image": {
+        "src": "/images/hero.webp",
+        "alt": "Imagen de presentación"
+      },
+      "cta": {
+        "primary": {
+          "label": "Ver proyectos",
+          "href": "/projects"
+        },
+        "secondary": {
+          "label": "Descargar CV",
+          "href": "/images/cv.webp"
+        }
+      },
+      "badge": {
+        "label": "CONFÍAN EN MÍ",
+        "value": "+25 clientes internacionales"
+      }
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Soy desarrollador fullstack especializado en crear productos digitales sólidos y escalables. Con más de 2 años de experiencia, conecto la lógica compleja del backend con experiencias frontend intuitivas.",
+      "badge": "Desarrollador certificado en AWS",
+      "metrics": [
+        {
+          "label": "EXPERIENCIA",
+          "value": "+2 años"
+        },
+        {
+          "label": "PROYECTOS",
+          "value": "+2"
+        },
+        {
+          "label": "TASA DE ÉXITO",
+          "value": "100%"
+        },
+        {
+          "label": "DISPONIBILIDAD",
+          "value": "Remoto"
+        }
+      ]
+    },
+    "contact": {
+      "title": "¿Tienes un proyecto en mente?",
+      "description": "Construyamos algo grande juntos"
+    },
+    "footer": {
+      "copy": "© {year} JUAN.DEV · Todos los derechos reservados.",
+      "socials": [
+        {
+          "label": "X",
+          "icon": "x-twitter",
+          "href": "https://x.com"
+        },
+        {
+          "label": "LinkedIn",
+          "icon": "linkedin",
+          "href": "https://linkedin.com"
+        },
+        {
+          "label": "GitHub",
+          "icon": "github",
+          "href": "https://github.com/Jhonttt"
+        },
+        {
+          "label": "Web",
+          "icon": "globe",
+          "href": "https://proyectoserena.vercel.app"
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "logo": {
+      "icon": "",
+      "title": "Juan.dev"
+    },
+    "links": [
+      {
+        "label": "Proyectos",
+        "href": "#projects"
+      },
+      {
+        "label": "Sobre mí",
+        "href": "#about"
+      },
+      {
+        "label": "Stack",
+        "href": "#stack"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contact"
+      }
+    ],
+    "cta": {
+      "label": "Hablemos",
+      "href": "#contact"
+    }
+  },
+  "projects": {
+    "title": "Proyectos destacados",
+    "description": "Trabajos recientes de mi laboratorio de desarrollo.",
+    "cta": {
+      "label": "Ver todos los proyectos",
+      "href": "/projects"
+    },
+    "items": [
+      {
+        "id": "serena-project",
+        "title": "Proyecto Serena",
+        "description": "Portal web para estudiantes con dificultades emocionales.",
+        "image": "/images/projects/serena-project.webp",
+        "tags": ["Node.js", "React", "Tailwindcss"],
+        "url": "http://proyectoserena.vercel.app"
+      },
+      {
+        "id": "project-hub",
+        "title": "Project Hub",
+        "description": "Web para que un centro educativo publique los trabajos de sus estudiantes.",
+        "image": "/images/projects/intermodular.webp",
+        "tags": ["Laravel", "Angular", "Boostrap", "Blade"],
+        "url": "https://github.com/Jhonttt/proyecto-intermodular"
+      },
+      {
+        "id": "notas-app",
+        "title": "NotasApp",
+        "description": "Gestor de tareas en JavaScript con persistencia en localStorage, historial de estados, comunicación entre ventanas y soporte multilingüe.",
+        "image": "/images/projects/notes.webp",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "url": "https://github.com/Jhonttt/dwec-u3-notasapp-atahona-toro"
+      },
+      {
+        "id": "localhub",
+        "title": "LocalHub",
+        "description": "Página responsive que conecta a usuarios con servicios locales, creada con CSS Grid, Flexbox, Sass, temas claro y oscuro y accesibilidad WCAG AA.",
+        "image": "/images/projects/localhub.webp",
+        "tags": ["HTML", "CSS", "Sass"],
+        "url": "https://github.com/Jhonttt/diw-u2-localhub-atahona-toro"
+      },
+      {
+        "id": "presupuestador-copisteria",
+        "title": "Presupuestador de copistería",
+        "description": "Calculadora de presupuestos para copistería en JavaScript. Gestiona páginas en blanco y negro o color, impresión a doble cara, encuadernación, descuentos por volumen y recargos por urgencia con aritmética entera.",
+        "image": "/images/projects/presupuestador.webp",
+        "tags": ["JavaScript", "HTML", "CSS"],
+        "url": "https://github.com/Jhonttt/presupuestador-de-copisteria"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Mis tecnologías",
+    "description": "Las herramientas y tecnologías que uso para dar vida a las ideas.",
+    "categories": [
+      {
+        "id": "frontend",
+        "label": "Frontend",
+        "icon": "icon-frontend",
+        "items": [
+          {
+            "name": "React",
+            "icon": "icon-react"
+          },
+          {
+            "name": "Vue",
+            "icon": "icon-vue"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "icon-typescript"
+          },
+          {
+            "name": "Tailwind",
+            "icon": "icon-tailwind"
+          }
+        ]
+      },
+      {
+        "id": "backend",
+        "label": "Backend",
+        "icon": "icon-backend",
+        "items": [
+          {
+            "name": "Node.js",
+            "icon": "icon-nodejs"
+          },
+          {
+            "name": "Laravel",
+            "icon": "icon-laravel"
+          },
+          {
+            "name": "MongoDB",
+            "icon": "icon-mongodb"
+          },
+          {
+            "name": "Java",
+            "icon": "icon-java"
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "label": "Otros",
+        "icon": "icon-other",
+        "items": [
+          {
+            "name": "Vercel",
+            "icon": "icon-vercel"
+          },
+          {
+            "name": "AWS",
+            "icon": "icon-aws"
+          },
+          {
+            "name": "Git",
+            "icon": "icon-git"
+          },
+          {
+            "name": "Figma",
+            "icon": "icon-figma"
+          }
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "homeTitle": "Juan Atahona — Desarrollador fullstack",
+    "homeDescription": "Desarrollador fullstack centrado en la profundidad visual y una ejecución cuidada.",
+    "projectsTitle": "Proyectos — Juan Atahona",
+    "projectsDescription": "Una colección de proyectos fullstack creados con tecnologías web modernas.",
+    "home": "Ir al inicio",
+    "mainNavigation": "Navegación principal",
+    "portfolio": "Portfolio de Juan Atahona",
+    "metrics": "Métricas profesionales",
+    "allProjects": "Ver todos los proyectos",
+    "projectList": "Lista de proyectos",
+    "techList": "Lista de tecnologías",
+    "noProjects": "No hay proyectos",
+    "back": "Volver",
+    "backHome": "Volver al inicio",
+    "searchProjects": "Buscar proyectos...",
+    "noMatches": "No se encontraron proyectos que coincidan con",
+    "email": "Enviar correo a {email}",
+    "newTab": "se abre en una pestaña nueva",
+    "projectScreenshot": "Captura de pantalla del proyecto {title}",
+    "loadingError": "Se ha producido un error al cargar el portfolio.",
+    "retry": "Reintentar",
+    "pageNotFound": "Página no encontrada",
+    "pageNotFoundDescription": "La página que buscas no existe.",
+    "serverError": "Error del servidor",
+    "serverErrorDescription": "Algo salió mal. Inténtalo de nuevo más tarde.",
+    "goHome": "Ir al inicio",
+    "language": "Idioma",
+    "switchLanguage": "Cambiar idioma a {language}",
+    "labels": "Etiquetas"
+  }
+}

@@ -1,7 +1,7 @@
 <template>
   <div class="font-inter min-h-screen flex flex-col overflow-hidden">
     <LayoutDefaultAppHeader />
-    <main class="flex-1" aria-label="Portfolio of Juan Atahona">
+    <main class="flex-1" :aria-label="$t('ui.portfolio')">
       <slot />
     </main>
     <LayoutDefaultAppFooter />

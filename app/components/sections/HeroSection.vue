@@ -5,7 +5,7 @@
   useHead({
     link: [{ rel: 'preload', as: 'image', href: '/images/hero.webp', fetchpriority: 'high' }],
   })
-  const hero = usePortfolioStore().hero
+  const { hero } = storeToRefs(usePortfolioStore())
 </script>
 
 <template>
@@ -51,8 +51,10 @@
             class="absolute -bottom-6 -left-6 text-text-primary px-4 py-2 rounded-md shadow-lg bg-dark-primary border border-dark-border flex flex-col items-start gap-1"
             aria-hidden="true"
           >
-            <span class="text-text-muted text-fluid-xs uppercase font-bold">Trusted by</span>
-            <p class="font-bold text-fluid-xs text-text-primary">25+ Global Clients</p>
+            <span class="text-text-muted text-fluid-xs uppercase font-bold">{{
+              hero.badge.label
+            }}</span>
+            <p class="font-bold text-fluid-xs text-text-primary">{{ hero.badge.value }}</p>
           </div>
         </div>
       </div>

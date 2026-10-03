@@ -106,11 +106,6 @@ personal-portfolio/
 │   │   └── sections/          # 📄 Secciones del portfolio
 │   ├── composables/           # 🛠️ Composable functions
 │   │   └── usePublicAsset.ts  # 🔗 Resuelve rutas de assets
-│   ├── data/                  # 📊 Datos estáticos JSON
-│   │   ├── general.json
-│   │   ├── navigation.json
-│   │   ├── projects.json
-│   │   └── skills.json
 │   ├── stores/                # 🏪 Estado global (Pinia)
 │   │   └── portfolio.ts
 │   ├── app.vue                # 🎯 Componente raíz
@@ -121,6 +116,9 @@ personal-portfolio/
 │   ├── og-image.webp          # 📱 Open Graph
 │   ├── robots.txt
 │   └── sprite.svg             # 🌐 Iconos sociales
+├── i18n/locales/              # 🌍 Contenidos y textos en español e inglés
+│   ├── es.json
+│   └── en.json
 ├── .env.example               # ⚙️ Variables de entorno de ejemplo
 ├── nuxt.config.ts             # ⚙️ Configuración de Nuxt
 └── package.json               # 📦 Dependencias y scripts
@@ -132,7 +130,7 @@ personal-portfolio/
 
 El portfolio sigue una arquitectura de **sitio estático generado** (`nuxt generate`):
 
-- **Datos** centralizados en JSONs bajo `app/data/`, consumidos por `usePortfolioStore`
+- **Datos y textos** centralizados en `i18n/locales/`, consumidos por `usePortfolioStore` y `useI18n`
 - **Store** único que inicializa y expone todos los datos con manejo de errores
 - **Componentes** en tres capas — `base/` (primitivos) → `layout/` (estructura) → `sections/` (contenido)
 - **Assets públicos** siempre referenciados via `usePublicAsset()` para compatibilidad entre entornos

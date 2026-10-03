@@ -1,10 +1,12 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
 
-  const logo = usePortfolioStore().navigation.logo
-  const footerCopy = usePortfolioStore().footer.copy.replace(
-    '{year}',
-    new Date().getFullYear().toString()
+  const { navigation } = storeToRefs(usePortfolioStore())
+  const logo = computed(() => navigation.value.logo)
+  const { footer } = storeToRefs(usePortfolioStore())
+  const { t } = useI18n()
+  const footerCopy = computed(() =>
+    footer.value.copy.replace('{year}', new Date().getFullYear().toString())
   )
 </script>
 
@@ -16,7 +18,7 @@
       <a
         href="#"
         class="uppercase font-black flex items-center gap-2 text-text-primary shrink text-fluid-lg"
-        :aria-label="`${logo.title} - go home`"
+        :aria-label="`${logo.title} - ${t('ui.home')}`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
           <span class="material-symbols-outlined">code</span>

@@ -1,15 +1,16 @@
 <script setup lang="ts">
   const config = useRuntimeConfig()
+  const { t } = useI18n()
 
   definePageMeta({
     layout: 'projects',
   })
 
   useSeoMeta({
-    title: 'Projects | Juan Atahona',
-    description: 'A collection of fullstack projects built with modern web technologies.',
-    ogTitle: 'Projects | Juan Atahona',
-    ogDescription: 'A collection of fullstack projects built with modern web technologies.',
+    title: () => t('ui.projectsTitle'),
+    description: () => t('ui.projectsDescription'),
+    ogTitle: () => t('ui.projectsTitle'),
+    ogDescription: () => t('ui.projectsDescription'),
     ogImage: `${config.public.siteUrl}/og-image.webp`,
     ogUrl: `${config.public.siteUrl}/projects`,
     ogType: 'website',
@@ -49,12 +50,12 @@
         role="alert"
         class="min-h-screen flex flex-col items-center justify-center gap-3 text-center"
       >
-        <p class="text-text-primary">Something went wrong loading the portfolio.</p>
+        <p class="text-text-primary">{{ t('ui.loadingError') }}</p>
         <button
           class="border-2 rounded-md py-1.5 px-3.5 text-fluid-xs font-bold hover:text-text-primary hover:bg-accent hover:border-accent transition"
           @click="clearError()"
         >
-          Try again
+          {{ t('ui.retry') }}
         </button>
       </div>
     </template>
@@ -77,13 +78,13 @@
             <NuxtLink
               href="/"
               class="flex items-center gap-2 text-text-muted hover:text-accent transition-colors w-fit group"
-              aria-label="Back to home"
+              :aria-label="t('ui.backHome')"
             >
               <span
                 class="material-symbols-outlined group-hover:-translate-x-0.5 transition-transform"
                 >arrow_back</span
               >
-              <span class="font-bold text-fluid-sm">Back</span>
+              <span class="font-bold text-fluid-sm">{{ t('ui.back') }}</span>
             </NuxtLink>
             <label
               class="relative flex items-center bg-dark-raised rounded-full border-3 border-dark-border transition-all duration-200 focus-within:border-accent shrink-0"
@@ -91,7 +92,7 @@
               <input
                 v-model="searchQuery"
                 type="search"
-                placeholder="Search projects..."
+                :placeholder="t('ui.searchProjects')"
                 class="w-40 sm:w-64 bg-transparent px-4 py-2.5 text-text-primary placeholder:text-text-muted border-none outline-none ring-0 focus:ring-0 transition-colors"
               />
               <span
@@ -107,7 +108,7 @@
       <ul
         v-if="filteredProjects?.length"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-none p-0"
-        aria-label="List of projects"
+        :aria-label="t('ui.projectList')"
       >
         <li v-for="project in filteredProjects" :key="project.id">
           <BaseProject v-bind="project" />
@@ -117,7 +118,7 @@
         v-else-if="searchQuery"
         class="flex flex-col items-center justify-center min-h-100 gap-4 text-center"
       >
-        <p class="text-fluid-2xl font-bold text-text-primary">No projects found matching</p>
+        <p class="text-fluid-2xl font-bold text-text-primary">{{ t('ui.noMatches') }}</p>
         <p class="text-fluid-lg text-text-muted font-semibold bg-dark-raised px-4 py-2 rounded-md">
           "{{ searchQuery }}"
         </p>
@@ -126,7 +127,7 @@
         <div class="p-4 bg-dark-raised rounded-full border border-dark-border">
           <span class="material-symbols-outlined text-fluid-4xl text-text-muted">folder_open</span>
         </div>
-        <p class="text-fluid-2xl font-bold text-text-primary">There aren't projects</p>
+        <p class="text-fluid-2xl font-bold text-text-primary">{{ t('ui.noProjects') }}</p>
       </div>
     </div>
   </NuxtErrorBoundary>

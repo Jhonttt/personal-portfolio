@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
-  const about = usePortfolioStore().about
+  const { about } = storeToRefs(usePortfolioStore())
+  const { t } = useI18n()
 </script>
 
 <template>
@@ -25,7 +26,7 @@
         </div>
 
         <div role="region" aria-labelledby="metrics-heading">
-          <h3 id="metrics-heading" class="sr-only">Professional metrics</h3>
+          <h3 id="metrics-heading" class="sr-only">{{ t('ui.metrics') }}</h3>
           <ul class="grid grid-cols-2 gap-4 list-none">
             <li v-for="card in about.metrics" :key="card.label">
               <BaseCard :title="card.label">
