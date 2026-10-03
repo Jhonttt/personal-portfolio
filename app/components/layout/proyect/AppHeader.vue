@@ -1,7 +1,8 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
 
-  const navigation = usePortfolioStore().navigation
+  const { navigation } = storeToRefs(usePortfolioStore())
+  const { t } = useI18n()
 </script>
 
 <template>
@@ -12,13 +13,14 @@
       <NuxtLink
         href="/"
         class="uppercase font-black flex items-center gap-2 text-text-primary shrink text-fluid-lg"
-        :aria-label="`${navigation.logo.title} - go home`"
+        :aria-label="`${navigation.logo.title} - ${t('ui.home')}`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
           <span class="material-symbols-outlined">code</span>
         </div>
         <span class="tracking-tighter">{{ navigation.logo.title }}</span>
       </NuxtLink>
+      <LayoutLanguageSwitcher />
     </div>
   </header>
 </template>
