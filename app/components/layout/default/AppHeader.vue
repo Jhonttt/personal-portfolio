@@ -1,7 +1,8 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
 
-  const navigation = usePortfolioStore().navigation
+  const { navigation } = storeToRefs(usePortfolioStore())
+  const { t } = useI18n()
 </script>
 
 <template>
@@ -12,7 +13,7 @@
       <a
         href="#"
         class="uppercase font-black flex items-center gap-2 text-text-primary shrink text-fluid-lg"
-        :aria-label="`${navigation.logo.title} - go home`"
+        :aria-label="`${navigation.logo.title} - ${t('ui.home')}`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
           <span class="material-symbols-outlined">code</span>
@@ -20,7 +21,10 @@
         <span class="tracking-tighter hidden sm:flex">{{ navigation.logo.title }}</span>
       </a>
 
-      <LayoutDefaultAppNav />
+      <div class="flex items-center gap-3 md:gap-6">
+        <LayoutDefaultAppNav />
+        <LayoutLanguageSwitcher />
+      </div>
     </div>
   </header>
 </template>
