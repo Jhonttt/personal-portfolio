@@ -1,8 +1,9 @@
 <script setup lang="ts">
   import { usePortfolioStore } from '#imports'
-  const projects = usePortfolioStore().projects
+  const { projects } = storeToRefs(usePortfolioStore())
+  const { t } = useI18n()
 
-  const size = projects.items.length >= 2 ? 2 : projects.items.length
+  const size = computed(() => Math.min(projects.value.items.length, 2))
 </script>
 
 <template>
@@ -27,7 +28,7 @@
         <NuxtLink
           :href="projects.cta.href"
           class="flex items-center gap-2 text-text-muted hover:text-accent transition-colors w-fit group"
-          aria-label="See all the projects"
+          :aria-label="t('ui.allProjects')"
         >
           <span class="md:text-fluid-sm text-fluid-md font-bold">{{ projects.cta.label }}</span>
           <span class="material-symbols-outlined group-hover:translate-x-0.5 transition-transform"
@@ -41,12 +42,12 @@
       v-if="projects.items?.length"
       class="grid grid-cols-1 gap-6 mt-5 md:mt-10 list-none p-0"
       :class="size >= 2 ? 'md:grid-cols-2' : 'md:grid-cols-1'"
-      aria-label="List of projects"
+      :aria-label="t('ui.projectList')"
     >
       <li v-for="project in projects.items.slice(0, size)" :key="project.id">
         <BaseProject v-bind="project" />
       </li>
     </ul>
-    <p v-else class="text-center text-fluid-2xl mt-3" role="status">There aren't projects</p>
+    <p v-else class="text-center text-fluid-2xl mt-3" role="status">{{ t('ui.noProjects') }}</p>
   </section>
 </template>

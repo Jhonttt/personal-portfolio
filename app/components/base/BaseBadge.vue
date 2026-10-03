@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  const { t } = useI18n()
   interface Props {
     labels: string[]
   }
@@ -7,7 +8,7 @@
 </script>
 
 <template>
-  <ul class="flex items-center gap-1" aria-label="Labels">
+  <ul class="flex items-center gap-1" :aria-label="t('ui.labels')">
     <li
       v-for="(label, index) in props.labels"
       :key="label"

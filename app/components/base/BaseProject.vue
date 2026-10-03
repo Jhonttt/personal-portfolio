@@ -10,6 +10,7 @@
   }
 
   const props = defineProps<Props>()
+  const { t } = useI18n()
 </script>
 
 <template>
@@ -24,7 +25,7 @@
     <div class="rounded-3xl overflow-hidden border border-dark-border mb-5 h-72">
       <img
         :src="usePublicAsset(props.image)"
-        :alt="`Captura de pantalla del proyecto ${props.title}`"
+        :alt="t('ui.projectScreenshot', { title: props.title })"
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         width="800"
         height="600"
@@ -39,7 +40,7 @@
           class="md:text-fluid-xl font-bold tracking-tighter text-fluid-2xl"
         >
           {{ props.title }}
-          <span class="sr-only">(opens in new tab)</span>
+          <span class="sr-only">({{ t('ui.newTab') }})</span>
         </h3>
       </div>
       <div
