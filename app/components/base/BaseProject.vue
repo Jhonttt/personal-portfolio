@@ -47,7 +47,7 @@
         class="size-12 rounded-full border border-dark-border flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-colors fill-text-primary"
         aria-hidden="true"
       >
-        <span class="material-symbols-outlined text-white">north_east</span>
+        <BaseIcon name="north_east" class="text-white" />
       </div>
     </div>
     <p

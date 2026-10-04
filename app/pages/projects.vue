@@ -80,10 +80,10 @@
               class="flex items-center gap-2 text-text-muted hover:text-accent transition-colors w-fit group"
               :aria-label="t('ui.backHome')"
             >
-              <span
-                class="material-symbols-outlined group-hover:-translate-x-0.5 transition-transform"
-                >arrow_back</span
-              >
+              <BaseIcon
+                name="arrow_back"
+                class="group-hover:-translate-x-0.5 transition-transform"
+              />
               <span class="font-bold text-fluid-sm">{{ t('ui.back') }}</span>
             </NuxtLink>
             <label
@@ -93,13 +93,14 @@
                 v-model="searchQuery"
                 type="search"
                 :placeholder="t('ui.searchProjects')"
+                :aria-label="t('ui.searchProjects')"
                 class="w-40 sm:w-64 bg-transparent px-4 py-2.5 text-text-primary placeholder:text-text-muted border-none outline-none ring-0 focus:ring-0 transition-colors"
               />
-              <span
-                class="material-symbols-outlined text-text-muted mr-3 ml-1 text-fluid-lg cursor-pointer hover:text-accent transition-colors"
-              >
-                search
-              </span>
+              <BaseIcon
+                name="search"
+                size="1em"
+                class="text-text-muted mr-3 ml-1 text-fluid-lg cursor-pointer hover:text-accent transition-colors"
+              />
             </label>
           </div>
         </div>
@@ -125,7 +126,7 @@
       </div>
       <div v-else class="flex flex-col items-center justify-center min-h-100 gap-4 text-center">
         <div class="p-4 bg-dark-raised rounded-full border border-dark-border">
-          <span class="material-symbols-outlined text-fluid-4xl text-text-muted">folder_open</span>
+          <BaseIcon name="folder_open" size="1em" class="text-fluid-4xl text-text-muted" />
         </div>
         <p class="text-fluid-2xl font-bold text-text-primary">{{ t('ui.noProjects') }}</p>
       </div>

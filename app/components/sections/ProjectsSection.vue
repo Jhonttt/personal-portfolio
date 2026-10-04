@@ -31,9 +31,7 @@
           :aria-label="t('ui.allProjects')"
         >
           <span class="md:text-fluid-sm text-fluid-md font-bold">{{ projects.cta.label }}</span>
-          <span class="material-symbols-outlined group-hover:translate-x-0.5 transition-transform"
-            >arrow_forward</span
-          >
+          <BaseIcon name="arrow_forward" class="group-hover:translate-x-0.5 transition-transform" />
         </NuxtLink>
       </div>
     </div>
