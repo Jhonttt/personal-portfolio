@@ -16,7 +16,7 @@
         :aria-label="`${navigation.logo.title} - ${t('ui.home')}`"
       >
         <div class="size-10 flex items-center justify-center bg-accent rounded-md shrink-0">
-          <span class="material-symbols-outlined">code</span>
+          <BaseCodeIcon />
         </div>
         <span class="tracking-tighter hidden sm:flex">{{ navigation.logo.title }}</span>
       </a>
