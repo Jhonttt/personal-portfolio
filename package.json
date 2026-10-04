@@ -14,6 +14,8 @@
     "format:check": "prettier --check .",
     "test:icons": "node --test tests/icons.test.mjs",
     "preview:icons": "node tests/icon-network-preview.mjs",
+    "test:fonts": "node --test tests/fonts.test.mjs",
+    "preview:fonts": "node tests/font-network-preview.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
