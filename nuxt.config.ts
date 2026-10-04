@@ -1,16 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
+const baseURL = process.env.NUXT_APP_BASE_URL || '/'
+const fontURL = `${baseURL.replace(/\/$/, '')}/fonts/public-sans-latin.woff2`
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
-  modules: [
-    '@nuxt/eslint',
-    '@pinia/nuxt',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/i18n',
-  ],
+  modules: ['@nuxt/eslint', '@pinia/nuxt', '@nuxtjs/sitemap', '@nuxtjs/i18n'],
 
   typescript: {
     strict: true,
@@ -30,27 +26,31 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'es' },
       link: [
         {
+          rel: 'preload',
+          as: 'font',
+          type: 'font/woff2',
+          href: fontURL,
+          crossorigin: 'anonymous',
+        },
+        {
           rel: 'icon',
           type: 'image/x-icon',
           href: `${process.env.NUXT_APP_BASE_URL || ''}/favicon.ico`,
         },
       ],
+      style: [
+        {
+          innerHTML: `@font-face{font-family:'Public Sans';src:url('${fontURL}') format('woff2');font-style:normal;font-weight:300 900;font-display:optional}`,
+        },
+      ],
     },
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL,
   },
 
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     },
-  },
-
-  googleFonts: {
-    families: {
-      'Public+Sans': [300, 400, 500, 600, 700, 800, 900],
-    },
-    display: 'swap',
-    preload: true,
   },
 
   nitro: {
