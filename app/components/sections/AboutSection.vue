@@ -20,7 +20,7 @@
             {{ about.description }}
           </p>
           <div class="flex items-center gap-1 text-accent font-bold">
-            <span class="material-symbols-outlined">verified</span>
+            <BaseIcon name="verified" />
             <span class="text-fluid-md md:text-fluid-sm">{{ about.badge }}</span>
           </div>
         </div>
