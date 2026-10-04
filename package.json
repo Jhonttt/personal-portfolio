@@ -12,6 +12,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "test:icons": "node --test tests/icons.test.mjs",
+    "preview:icons": "node tests/icon-network-preview.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
